@@ -20,7 +20,7 @@ public class Floating : MonoBehaviour
         originPosition = transform.localPosition;
         tick = Random.Range(0f, 1f * Mathf.PI);
         // 计算振幅
-        amplitude = Mathf.PI / frequency / 30;
+        amplitude = Mathf.PI / frequency / 4;
         animate = playAwake;
     }
 
