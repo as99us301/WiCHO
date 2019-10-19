@@ -1,28 +1,27 @@
 fileFormatVersion: 2
-guid: 548f50837def1634fac8c51977a29b94
+guid: 7596629964c8e824a948bc25303764a1
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Sphere002_Sphere002
-    100004: Torus001_Torus001
-    400000: //RootNode
-    400002: Sphere002_Sphere002
-    400004: Torus001_Torus001
-    2100000: Sphere002_Sphere002Mat
-    2100002: Torus001_Torus001Mat
-    2300000: Sphere002_Sphere002
-    2300002: Torus001_Torus001
-    3300000: Sphere002_Sphere002
-    3300002: Torus001_Torus001
-    4300000: Sphere002_Sphere002
-    4300002: Torus001_Torus001
+    100000: Capsule001_Capsule001
+    100002: //RootNode
+    100004: Sphere002_Sphere002
+    400000: Capsule001_Capsule001
+    400002: //RootNode
+    400004: Sphere002_Sphere002
+    2100000: Material
+    2300000: Capsule001_Capsule001
+    2300002: Sphere002_Sphere002
+    3300000: Capsule001_Capsule001
+    3300002: Sphere002_Sphere002
+    4300000: Capsule001_Capsule001
+    4300002: Sphere002_Sphere002
   externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

@@ -1,23 +1,33 @@
 fileFormatVersion: 2
-guid: 548f50837def1634fac8c51977a29b94
+guid: 36d222321fdeea44690395a58f171987
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: Sphere002_Sphere002
-    100004: Torus001_Torus001
+    100004: Torus003_Torus003
     400000: //RootNode
     400002: Sphere002_Sphere002
-    400004: Torus001_Torus001
+    400004: Torus003_Torus003
     2100000: Sphere002_Sphere002Mat
-    2100002: Torus001_Torus001Mat
+    2100002: Torus003_Torus003Mat
     2300000: Sphere002_Sphere002
-    2300002: Torus001_Torus001
+    2300002: Torus003_Torus003
     3300000: Sphere002_Sphere002
-    3300002: Torus001_Torus001
+    3300002: Torus003_Torus003
     4300000: Sphere002_Sphere002
-    4300002: Torus001_Torus001
-  externalObjects: {}
+    4300002: Torus003_Torus003
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere002_Sphere002Mat
+    second: {fileID: 2100000, guid: 8cf5a23d9852626498223789c7d1e764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Torus003_Torus003Mat
+    second: {fileID: 2100000, guid: bdbc4fc5720e8ff4796839604b10d815, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

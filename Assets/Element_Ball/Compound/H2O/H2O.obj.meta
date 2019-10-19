@@ -1,23 +1,55 @@
 fileFormatVersion: 2
-guid: 548f50837def1634fac8c51977a29b94
+guid: b20ebd23219c6b945a1d5d219655439b
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Sphere002_Sphere002
-    100004: Torus001_Torus001
-    400000: //RootNode
-    400002: Sphere002_Sphere002
-    400004: Torus001_Torus001
-    2100000: Sphere002_Sphere002Mat
-    2100002: Torus001_Torus001Mat
-    2300000: Sphere002_Sphere002
-    2300002: Torus001_Torus001
-    3300000: Sphere002_Sphere002
-    3300002: Torus001_Torus001
-    4300000: Sphere002_Sphere002
-    4300002: Torus001_Torus001
-  externalObjects: {}
+    100000: Capsule001_Capsule001
+    100002: Capsule002_Capsule002
+    100004: //RootNode
+    100006: Sphere002_Sphere002
+    100008: Torus001_Torus001
+    400000: Capsule001_Capsule001
+    400002: Capsule002_Capsule002
+    400004: //RootNode
+    400006: Sphere002_Sphere002
+    400008: Torus001_Torus001
+    2100000: Capsule001_Capsule001Mat
+    2100002: Capsule002_Capsule002Mat
+    2100004: Sphere002_Sphere002Mat
+    2100006: Torus001_Torus001Mat
+    2300000: Capsule001_Capsule001
+    2300002: Capsule002_Capsule002
+    2300004: Sphere002_Sphere002
+    2300006: Torus001_Torus001
+    3300000: Capsule001_Capsule001
+    3300002: Capsule002_Capsule002
+    3300004: Sphere002_Sphere002
+    3300006: Torus001_Torus001
+    4300000: Capsule001_Capsule001
+    4300002: Capsule002_Capsule002
+    4300004: Sphere002_Sphere002
+    4300006: Torus001_Torus001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Capsule001_Capsule001Mat
+    second: {fileID: 2100000, guid: 6db10b573335a2441b3ab8bbbfe932fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Capsule002_Capsule002Mat
+    second: {fileID: 2100000, guid: 29d4710c3d666b3449c2a8491ed0d07c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere002_Sphere002Mat
+    second: {fileID: 2100000, guid: f1d3c672da9791744a13527cd3383055, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Torus001_Torus001Mat
+    second: {fileID: 2100000, guid: 66d528a9e8c5c554d838543a7312b469, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
