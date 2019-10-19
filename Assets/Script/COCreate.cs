@@ -13,7 +13,7 @@ public class COCreate : MonoBehaviour {
         {
             Cobj.SetActive(false);
             Oobj.SetActive(false);
-            newobj.SetActive(true);
+            newobj.SetActive(true);       
         }
         else if (collision.gameObject.tag == "C")
         {
