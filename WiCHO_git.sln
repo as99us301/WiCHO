@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiCHO_git", "WiCHO_git.csproj", "{60F6A79C-DF82-35EC-7332-1075E4E0D447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.StandardEvents", "UnityEditor.StandardEvents.csproj", "{6800202F-4402-D405-F8CB-03DC7BD78B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiCHO_git.Editor", "WiCHO_git.Editor.csproj", "{DEBE21CE-E9CF-8373-267C-3575234B4D3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60F6A79C-DF82-35EC-7332-1075E4E0D447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F6A79C-DF82-35EC-7332-1075E4E0D447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F6A79C-DF82-35EC-7332-1075E4E0D447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F6A79C-DF82-35EC-7332-1075E4E0D447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBE21CE-E9CF-8373-267C-3575234B4D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBE21CE-E9CF-8373-267C-3575234B4D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBE21CE-E9CF-8373-267C-3575234B4D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBE21CE-E9CF-8373-267C-3575234B4D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
