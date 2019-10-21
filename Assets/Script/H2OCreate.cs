@@ -17,13 +17,7 @@ public class H2OCreate : MonoBehaviour {
 
     void Update()
     {
-        if (ColWith1 == false) {
-            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-            Destroy(GameObject.Find("water(Clone)"));
-        } else if (ColWith2 == false) {
-            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-            Destroy(GameObject.Find("water(Clone)"));
-        }
+
     }
 
     void OnCollisionEnter(Collision collision)
