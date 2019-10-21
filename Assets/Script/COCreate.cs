@@ -15,14 +15,14 @@ public class COCreate : MonoBehaviour {
         {
             Cobj.SetActive(false);
             Oobj.SetActive(false);
-            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Newthing.transform.rotation);
             CO.transform.parent = patentsPrefeb.transform;
         }
         else if (collision.gameObject.tag == "C")
         {
             Cobj.SetActive(false);
             Oobj.SetActive(false);
-            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Newthing.transform.rotation);
             CO.transform.parent = patentsPrefeb.transform;
         }
 
