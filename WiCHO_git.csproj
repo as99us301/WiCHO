@@ -312,6 +312,7 @@
     <Compile Include="Assets\Script\Create.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\H2OCreate.cs" />
+    <Compile Include="Assets\Script\ScaleAndRotate.cs" />
     <Compile Include="Assets\Script\TurnTest.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
