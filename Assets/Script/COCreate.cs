@@ -20,9 +20,8 @@ public class COCreate : MonoBehaviour {
         }
         else if (collision.gameObject.tag == "C")
         {
-            //Cobj.SetActive(false);
-            //Oobj.SetActive(false);
-            Destroy(Cobj);
+            Cobj.SetActive(false);
+            Oobj.SetActive(false);
             GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
             CO.transform.parent = patentsPrefeb.transform;
         }
