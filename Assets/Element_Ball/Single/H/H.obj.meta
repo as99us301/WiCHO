@@ -17,22 +17,12 @@ ModelImporter:
     3300002: Sphere002_Sphere002
     4300000: Capsule001_Capsule001
     4300002: Sphere002_Sphere002
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Capsule001_Capsule001Mat
-    second: {fileID: 2100000, guid: e794f9ad2a888ab47ad70ab064d65a14, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sphere002_Sphere002Mat
-    second: {fileID: 2100000, guid: 48a18c0d471688b419ec1695b0015f63, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
