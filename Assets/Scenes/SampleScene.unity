@@ -908,11 +908,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba3116f874b6ad4482d9fa00676cbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newobj: {fileID: 0}
   Cobj: {fileID: 0}
   Oobj: {fileID: 0}
   Newthing: {fileID: 0}
   Instantiate_Position: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
 --- !u!1001 &591885100
 Prefab:
   m_ObjectHideFlags: 0
@@ -29104,7 +29104,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1012498621}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.62, z: 0}
+  m_LocalPosition: {x: 0.079, y: 0.6, z: 0.024}
   m_LocalScale: {x: 0.25357738, y: 0.25357735, z: 0.25357735}
   m_Children: []
   m_Father: {fileID: 86372738}
@@ -34211,9 +34211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959b59ed88ffcb4d86011e11488a5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {fileID: 0}
-  end: {fileID: 0}
-  speed: 0
 --- !u!1 &1334710488
 GameObject:
   m_ObjectHideFlags: 0
@@ -53281,11 +53278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba3116f874b6ad4482d9fa00676cbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newobj: {fileID: 0}
   Cobj: {fileID: 1596521353}
   Oobj: {fileID: 1958653726}
   Newthing: {fileID: 1826667096958680, guid: 5ed8ec084b8f54f43a473d2625cb490a, type: 2}
   Instantiate_Position: {fileID: 1012498621}
+  patentsPrefeb: {fileID: 86372732}
 --- !u!54 &1687669547
 Rigidbody:
   m_ObjectHideFlags: 0

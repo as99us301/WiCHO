@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class COCreate : MonoBehaviour {
-    public GameObject newobj;
     public GameObject Cobj;
     public GameObject Oobj;
     public GameObject Newthing;
     public GameObject Instantiate_Position;
+    public GameObject patentsPrefeb;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -15,15 +15,16 @@ public class COCreate : MonoBehaviour {
         {
             Cobj.SetActive(false);
             Oobj.SetActive(false);
-            //newobj.SetActive(true);
-            Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            CO.transform.parent = patentsPrefeb.transform;
         }
         else if (collision.gameObject.tag == "C")
         {
-            Cobj.SetActive(false);
-            Oobj.SetActive(false);
-            //newobj.SetActive(true);
-            Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            //Cobj.SetActive(false);
+            //Oobj.SetActive(false);
+            Destroy(Cobj);
+            GameObject CO = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            CO.transform.parent = patentsPrefeb.transform;
         }
 
     }
@@ -35,14 +36,12 @@ public class COCreate : MonoBehaviour {
             Destroy(GameObject.Find("CO_test(Clone)"));
             Cobj.SetActive(true);
             Oobj.SetActive(true);
-            //newobj.SetActive(false);
         }
         else if (collision.gameObject.tag == "C")
         {
             Destroy(GameObject.Find("CO_test(Clone)"));
             Cobj.SetActive(true);
             Oobj.SetActive(true);
-            //newobj.SetActive(false);
         }
 
     }
