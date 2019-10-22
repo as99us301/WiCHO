@@ -8,6 +8,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject O_obj;
     public GameObject Newthing;
     public GameObject Newthing2;
+    public GameObject effect;
     public GameObject Instantiate_Position;
     public GameObject patentsPrefeb;
     public GameObject Botton1;
@@ -37,6 +38,7 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(false);
             Botton1.SetActive(true);
             Botton2.SetActive(true);
+            effect.SetActive(true);
             GameObject H2O = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
         }
@@ -51,6 +53,7 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(true);
             Botton1.SetActive(false);
             Botton2.SetActive(false);
+            effect.SetActive(false);
             Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
         }
@@ -62,6 +65,7 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(true);
             Botton1.SetActive(false);
             Botton2.SetActive(false);
+            effect.SetActive(false);
             Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
         }
