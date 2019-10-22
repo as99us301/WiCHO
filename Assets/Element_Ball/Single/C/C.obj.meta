@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36d222321fdeea44690395a58f171987
+guid: 5e43778a168348f4dbb2112382d206a3
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -17,22 +17,12 @@ ModelImporter:
     3300002: Torus003_Torus003
     4300000: Sphere002_Sphere002
     4300002: Torus003_Torus003
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sphere002_Sphere002Mat
-    second: {fileID: 2100000, guid: 8cf5a23d9852626498223789c7d1e764, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Torus003_Torus003Mat
-    second: {fileID: 2100000, guid: bdbc4fc5720e8ff4796839604b10d815, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
