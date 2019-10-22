@@ -59,8 +59,11 @@ public class ScaleAndRotate : MonoBehaviour
         }
 
         //記住最新的觸控點，下次使用
-        //oldTouch1 = newTouch1;
-        //oldTouch2 = newTouch2;
+        oldTouch1 = newTouch1;
+        oldTouch2 = newTouch2;
+        scale.x = 1f;
+        scale.y = 1f;
+        scale.z = 1f;
     }
 
 }
