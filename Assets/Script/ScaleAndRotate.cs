@@ -46,7 +46,7 @@ public class ScaleAndRotate : MonoBehaviour
         float offset = newDistance - oldDistance;
 
         //放大因子， 一個畫素按 0.01倍來算(100可調整)
-        float scaleFactor = offset / 100f;
+        float scaleFactor = offset / 1000f;
         Vector3 localScale = transform.localScale;
         Vector3 scale = new Vector3(localScale.x + scaleFactor,
                                     localScale.y + scaleFactor,
@@ -60,10 +60,7 @@ public class ScaleAndRotate : MonoBehaviour
 
         //記住最新的觸控點，下次使用
         oldTouch1 = newTouch1;
-        oldTouch2 = newTouch2;
-        scale.x = 1f;
-        scale.y = 1f;
-        scale.z = 1f;
+        oldTouch2 = newTouch2;        
     }
 
 }
