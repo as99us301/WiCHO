@@ -8,12 +8,16 @@ public class H2OCreate : MonoBehaviour {
     public GameObject O_obj;
     public GameObject Newthing;
     public GameObject Newthing2;
+    public GameObject Newthing3;
     public ParticleSystem effect;
-    public GameObject effect2;
-    public GameObject Instantiate_Position;
+    public ParticleSystem waterEffect;
+    public GameObject fireEffect;
+    public GameObject Instantiate_Pos1;
+    public GameObject Instantiate_Pos2;
     public GameObject patentsPrefeb;
     public GameObject Botton1;
     public GameObject Botton2;
+    public GameObject Botton3;
     private bool ColWith1 = false;
     private bool ColWith2 = false;
 
@@ -39,8 +43,9 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(false);
             Botton1.SetActive(true);
             Botton2.SetActive(true);
+            Botton3.SetActive(true);
             effect.Play();
-            GameObject H2O = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+            GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
         }
     }
@@ -54,9 +59,12 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(true);
             Botton1.SetActive(false);
             Botton2.SetActive(false);
+            Botton3.SetActive(false);
             effect.Stop();
             Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
+            Destroy(GameObject.Find("kettle(Clone)"));
+            Destroy(GameObject.Find("fire(Clone)"));
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3"))
         {
@@ -66,9 +74,12 @@ public class H2OCreate : MonoBehaviour {
             O_obj.SetActive(true);
             Botton1.SetActive(false);
             Botton2.SetActive(false);
+            Botton3.SetActive(false);
             effect.Stop();
             Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
+            Destroy(GameObject.Find("kettle(Clone)"));
+            Destroy(GameObject.Find("fire(Clone)"));
         }
     }
 
@@ -76,7 +87,9 @@ public class H2OCreate : MonoBehaviour {
     {
         Destroy(GameObject.Find("water(Clone)"));
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        GameObject H2O = Instantiate(Newthing, Instantiate_Position.transform.position, Instantiate_Position.transform.rotation);
+        Destroy(GameObject.Find("kettle(Clone)"));
+        Destroy(GameObject.Find("fire(Clone)"));
+        GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O.transform.parent = patentsPrefeb.transform;
     }
 
@@ -84,7 +97,9 @@ public class H2OCreate : MonoBehaviour {
     {
         Destroy(GameObject.Find("water(Clone)"));
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        GameObject H2O2 = Instantiate(Newthing2, Instantiate_Position.transform.position, Newthing2.transform.rotation);
+        Destroy(GameObject.Find("kettle(Clone)"));
+        Destroy(GameObject.Find("fire(Clone)"));
+        GameObject H2O2 = Instantiate(Newthing2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O2.transform.parent = patentsPrefeb.transform;
     }
 
@@ -92,8 +107,11 @@ public class H2OCreate : MonoBehaviour {
     {
         Destroy(GameObject.Find("water(Clone)"));
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        GameObject test1 = Instantiate(effect2, Instantiate_Position.transform.position, effect2.transform.rotation);
-        test1.transform.parent = patentsPrefeb.transform;
+        GameObject kettle = Instantiate(Newthing3, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        kettle.transform.parent = patentsPrefeb.transform;
+        waterEffect.Stop();
+        GameObject fire = Instantiate(fireEffect, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
+        fire.transform.parent = patentsPrefeb.transform;
     }
 
 }

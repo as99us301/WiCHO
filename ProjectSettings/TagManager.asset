@@ -8,6 +8,7 @@ TagManager:
   - C
   - H
   - O
+  - kettle
   layers:
   - Default
   - TransparentFX
