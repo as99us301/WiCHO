@@ -9,6 +9,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Newthing;
     public GameObject Newthing2;
     public ParticleSystem effect;
+    public GameObject effect2;
     public GameObject Instantiate_Position;
     public GameObject patentsPrefeb;
     public GameObject Botton1;
@@ -85,6 +86,14 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
         GameObject H2O2 = Instantiate(Newthing2, Instantiate_Position.transform.position, Newthing2.transform.rotation);
         H2O2.transform.parent = patentsPrefeb.transform;
+    }
+
+    public void button3Click()
+    {
+        Destroy(GameObject.Find("water(Clone)"));
+        Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
+        GameObject test1 = Instantiate(effect2, Instantiate_Position.transform.position, effect2.transform.rotation);
+        test1.transform.parent = patentsPrefeb.transform;
     }
 
 }
