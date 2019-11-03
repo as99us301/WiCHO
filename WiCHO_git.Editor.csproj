@@ -402,6 +402,7 @@
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\WaterTest\Water.shader" />
     <None Include="Assets\WaterTest\liquid.shader" />
     <None Include="C:\Users\R409J\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\R409J\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
