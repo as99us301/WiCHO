@@ -4,5 +4,8 @@
     <ImageTarget name="h2" size="1.000000 1.000000" />
     <ImageTarget name="h1" size="1.000000 0.998943" />
     <ImageTarget name="o2" size="1.000000 1.000000" />
+    <ImageTarget name="life" size="1.000000 1.598003" />
+    <ImageTarget name="LerGoCard" size="1.000000 1.572482" />
+    <ImageTarget name="ipass" size="1.000000 0.623626" />
   </Tracking>
 </QCARConfig>
