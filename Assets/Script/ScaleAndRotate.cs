@@ -26,6 +26,7 @@ public class ScaleAndRotate : MonoBehaviour
             transform.Rotate(Vector3.right * deltaPos.y, Space.World);
         }
 
+        /*
         //多點觸控, 放大縮小
         Touch newTouch1 = Input.GetTouch(0);
         Touch newTouch2 = Input.GetTouch(1);
@@ -60,7 +61,8 @@ public class ScaleAndRotate : MonoBehaviour
 
         //記住最新的觸控點，下次使用
         oldTouch1 = newTouch1;
-        oldTouch2 = newTouch2;        
+        oldTouch2 = newTouch2;     
+        */
     }
 
 }
