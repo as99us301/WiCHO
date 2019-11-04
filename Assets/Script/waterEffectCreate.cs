@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class waterEffectCreate : MonoBehaviour {
 
-    public ParticleSystem waterEffect;
+    public GameObject waterEffect;
+    
+    public void Start()
+    {
+        //waterEffect = kettle.transform.GetChild(0).gameObject;
+        GameObject root = GameObject.Find("kettle(Clone)");
+        waterEffect = root.transform.Find("water").gameObject;
+        
+    }
+
     // Use this for initialization
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "kettle")
         {
-            waterEffect.Play();
+            waterEffect.SetActive(true);
         }
       
     }
@@ -18,7 +27,7 @@ public class waterEffectCreate : MonoBehaviour {
     {
         if (collision.gameObject.tag == "kettle")
         {
-            waterEffect.Stop();
+            waterEffect.SetActive(false);
         }
     }
 }

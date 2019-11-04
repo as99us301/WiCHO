@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="life" size="1.000000 1.598003" />
-    <ImageTarget name="LerGoCard" size="1.000000 1.572482" />
-    <ImageTarget name="ipass" size="1.000000 0.623626" />
-    <ImageTarget name="NUTC" size="1.000000 0.637203" />
+    <ImageTarget name="h2" size="1.000000 1.000000" />
+    <ImageTarget name="h1" size="1.000000 0.998943" />
+    <ImageTarget name="o2" size="1.000000 1.000000" />
   </Tracking>
 </QCARConfig>

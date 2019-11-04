@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 198543734242284068}
   - component: {fileID: 199918299578452096}
   - component: {fileID: 65834635995499046}
-  - component: {fileID: 114660176414618954}
   m_Layer: 0
   m_Name: fire
   m_TagString: Untagged
@@ -86,19 +85,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.71000016, z: 1}
   m_Center: {x: 0, y: 1.6373147e-15, z: 0.61521566}
---- !u!114 &114660176414618954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806020927450512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fccccb9f2bfc05740aff271fde8e577d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
-    type: 2}
 --- !u!198 &198543734242284068
 ParticleSystem:
   m_ObjectHideFlags: 1

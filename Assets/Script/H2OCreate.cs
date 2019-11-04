@@ -9,9 +9,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Newthing;
     public GameObject Newthing2;
     public GameObject Newthing3;
-    public ParticleSystem effect;
-    public ParticleSystem waterEffect;
-    public GameObject fireEffect;
+    public GameObject furnace;
     public GameObject Instantiate_Pos1;
     public GameObject Instantiate_Pos2;
     public GameObject patentsPrefeb;
@@ -44,7 +42,6 @@ public class H2OCreate : MonoBehaviour {
             Botton1.SetActive(true);
             Botton2.SetActive(true);
             Botton3.SetActive(true);
-            effect.Play();
             GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
         }
@@ -60,11 +57,11 @@ public class H2OCreate : MonoBehaviour {
             Botton1.SetActive(false);
             Botton2.SetActive(false);
             Botton3.SetActive(false);
-            effect.Stop();
-            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
+            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("kettle(Clone)"));
             Destroy(GameObject.Find("fire(Clone)"));
+            Destroy(GameObject.Find("furnace(Clone)"));
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3"))
         {
@@ -75,11 +72,11 @@ public class H2OCreate : MonoBehaviour {
             Botton1.SetActive(false);
             Botton2.SetActive(false);
             Botton3.SetActive(false);
-            effect.Stop();
-            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("water(Clone)"));
+            Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
             Destroy(GameObject.Find("kettle(Clone)"));
             Destroy(GameObject.Find("fire(Clone)"));
+            Destroy(GameObject.Find("furnace(Clone)"));
         }
     }
 
@@ -89,6 +86,7 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
         Destroy(GameObject.Find("kettle(Clone)"));
         Destroy(GameObject.Find("fire(Clone)"));
+        Destroy(GameObject.Find("furnace(Clone)"));
         GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O.transform.parent = patentsPrefeb.transform;
     }
@@ -99,6 +97,7 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
         Destroy(GameObject.Find("kettle(Clone)"));
         Destroy(GameObject.Find("fire(Clone)"));
+        Destroy(GameObject.Find("furnace(Clone)"));
         GameObject H2O2 = Instantiate(Newthing2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O2.transform.parent = patentsPrefeb.transform;
     }
@@ -107,11 +106,13 @@ public class H2OCreate : MonoBehaviour {
     {
         Destroy(GameObject.Find("water(Clone)"));
         Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
+        Destroy(GameObject.Find("kettle(Clone)"));
+        Destroy(GameObject.Find("fire(Clone)"));
+        Destroy(GameObject.Find("furnace(Clone)"));
         GameObject kettle = Instantiate(Newthing3, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         kettle.transform.parent = patentsPrefeb.transform;
-        waterEffect.Stop();
-        GameObject fire = Instantiate(fireEffect, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
-        fire.transform.parent = patentsPrefeb.transform;
+        GameObject furnace2 = Instantiate(furnace, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
+        furnace2.transform.parent = patentsPrefeb.transform;
     }
 
 }
