@@ -5343,10 +5343,11 @@ MonoBehaviour:
   O_obj: {fileID: 0}
   Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 2}
   Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 2}
-  Newthing3: {fileID: 0}
-  effect: {fileID: 0}
-  waterEffect: {fileID: 0}
-  fireEffect: {fileID: 0}
+  Newthing3: {fileID: 1722210110170030, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
+  effect: {fileID: 198688966648083244, guid: 7567cd119805ca1499c73c0b2ed88622, type: 2}
+  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
+    type: 2}
+  fireEffect: {fileID: 1806020927450512, guid: 6f6895dfc5b25534faafd178e37312e0, type: 2}
   Instantiate_Pos1: {fileID: 1012498621}
   Instantiate_Pos2: {fileID: 989026474}
   patentsPrefeb: {fileID: 86372732}
@@ -5617,9 +5618,10 @@ MonoBehaviour:
   O_obj: {fileID: 0}
   Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 2}
   Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 2}
-  Newthing3: {fileID: 1996205229525960, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
+  Newthing3: {fileID: 1722210110170030, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
   effect: {fileID: 154352852}
-  waterEffect: {fileID: 0}
+  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
+    type: 2}
   fireEffect: {fileID: 1806020927450512, guid: 6f6895dfc5b25534faafd178e37312e0, type: 2}
   Instantiate_Pos1: {fileID: 1012498621}
   Instantiate_Pos2: {fileID: 989026474}
@@ -11441,9 +11443,9 @@ MonoBehaviour:
   O_obj: {fileID: 0}
   Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 2}
   Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 2}
-  Newthing3: {fileID: 1996205229525960, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
+  Newthing3: {fileID: 1722210110170030, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
   effect: {fileID: 154352852}
-  waterEffect: {fileID: 198222114855523462, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
+  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
     type: 2}
   fireEffect: {fileID: 1806020927450512, guid: 6f6895dfc5b25534faafd178e37312e0, type: 2}
   Instantiate_Pos1: {fileID: 1012498621}
@@ -16249,9 +16251,10 @@ MonoBehaviour:
   O_obj: {fileID: 1958653726}
   Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 2}
   Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 2}
-  Newthing3: {fileID: 1996205229525960, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
+  Newthing3: {fileID: 1722210110170030, guid: 6597f20d2cb2e1444a5e7b8ee73b4962, type: 2}
   effect: {fileID: 154352852}
-  waterEffect: {fileID: 0}
+  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
+    type: 2}
   fireEffect: {fileID: 1806020927450512, guid: 6f6895dfc5b25534faafd178e37312e0, type: 2}
   Instantiate_Pos1: {fileID: 1012498621}
   Instantiate_Pos2: {fileID: 989026474}

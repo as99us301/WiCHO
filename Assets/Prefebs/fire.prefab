@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fccccb9f2bfc05740aff271fde8e577d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterEffect: {fileID: 198222114855523462, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
+  waterEffect: {fileID: 198311209637165132, guid: 6597f20d2cb2e1444a5e7b8ee73b4962,
     type: 2}
 --- !u!198 &198543734242284068
 ParticleSystem:
