@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class lookatCamera : MonoBehaviour {
 
-    public Vector3 target;
+    public Transform obj;
+    public Transform Camera;
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(target);
+        obj.LookAt(Camera);
     }
 
 }
