@@ -10,55 +10,99 @@ public class CheckinView : MonoBehaviour
     private Renderer H1_Renderer;
     private Renderer H2_Renderer;
     private Renderer O_Renderer;
-    public GameObject image;
     public GameObject H1_ball;
     public GameObject H2_ball;
     public GameObject O_ball;
+    public GameObject totu01;
+    public GameObject totu02;
+    public GameObject totu03;
+    public GameObject totu04;
+    public GameObject totu05;
+
+    public bool ocheck;
+    public bool hDiss = true;    
 
     void Start()
     {
         H1_Renderer = H1_ball.GetComponent<Renderer>();
         H2_Renderer = H2_ball.GetComponent<Renderer>();
         O_Renderer = O_ball.GetComponent<Renderer>();
+        totu01.SetActive(true);
+        totu02.SetActive(false);
+        totu03.SetActive(false);
+        totu04.SetActive(false);
+        totu05.SetActive(false);
     }
 
     void Update()
     {
-        if (H1_IsVisible())
+        //當一個H出現時
+        if (H1_IsVisible() || H2_IsVisible())
         {
-            //Debug.Log("表示中");
-            image.SetActive(false);
+            totu01.SetActive(false);
+            totu02.SetActive(true);
+            totu03.SetActive(false);
+            totu04.SetActive(false);
+            totu05.SetActive(false);
+            hDiss = false;
         }
-        else
+        else if (!hDiss)
         {
             //Debug.Log("非表示中");
-            image.SetActive(true);
+            totu01.SetActive(true);
+            totu02.SetActive(false);
+            totu03.SetActive(false);
+            totu04.SetActive(false);
+            totu05.SetActive(false);
+            hDiss = true;
         }
-        if (H2_IsVisible())
+                
+        //當o出現時
+        if ((H1_IsVisible() || H2_IsVisible()) && O_IsVisible())
         {
             //Debug.Log("表示中");
-            image.SetActive(false);
+            totu01.SetActive(false);
+            totu02.SetActive(false);
+            totu03.SetActive(true);
+            totu04.SetActive(false);
+            totu05.SetActive(false);
+            ocheck = true;
         }
-        else
+        else if ((H1_IsVisible() || H2_IsVisible()))
         {
             //Debug.Log("非表示中");
-            image.SetActive(true);
+            totu01.SetActive(false);
+            totu02.SetActive(true);
+            totu03.SetActive(false);
+            totu04.SetActive(false);
+            totu05.SetActive(false);
+            ocheck = false;
         }
-        if (O_IsVisible())
+
+        
+        if (ocheck && H1_IsVisible() && H2_IsVisible())
         {
             //Debug.Log("表示中");
-            image.SetActive(false);
+            totu01.SetActive(false);
+            totu02.SetActive(false);
+            totu03.SetActive(false);
+            totu04.SetActive(true);
+            totu05.SetActive(false);
         }
-        else
+        else if (ocheck && (H1_IsVisible() || H2_IsVisible()))
         {
             //Debug.Log("非表示中");
-            image.SetActive(true);
+            totu01.SetActive(false);
+            totu02.SetActive(false);
+            totu03.SetActive(true);
+            totu04.SetActive(false);
+            totu05.SetActive(false);
         }
     }
 
     public bool H1_IsVisible()
     {
-        return H1_Renderer.isVisible;
+        return H1_Renderer.isVisible;           
     }
     public bool H2_IsVisible()
     {
@@ -68,4 +112,5 @@ public class CheckinView : MonoBehaviour
     {
         return O_Renderer.isVisible;
     }
+
 }
