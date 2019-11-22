@@ -309,6 +309,7 @@
   <ItemGroup>
     <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
     <Compile Include="Assets\Script\ButtonClick.cs" />
+    <Compile Include="Assets\Script\CheckinView.cs" />
     <Compile Include="Assets\Script\COCreate.cs" />
     <Compile Include="Assets\Script\Create.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
