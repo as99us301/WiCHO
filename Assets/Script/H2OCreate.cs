@@ -10,7 +10,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Newthing2;
     public GameObject Newthing3;
     public GameObject furnace;
-    public GameObject introd;
+    public GameObject introd; //化合物簡介
     public GameObject ice;
     public GameObject Instantiate_Pos1;
     public GameObject Instantiate_Pos2;
@@ -22,14 +22,16 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Botton5;
     private bool ColWith1 = false;
     private bool ColWith2 = false;
-    private bool NoColWith = true;
+    private bool ColWith;
+    public GameObject totu04; //教學介紹畫面
+    public GameObject totu05; //教學介紹畫面
 
     void Update()
     {
        
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision) //當碰撞完成後
     {
         if (collision.gameObject.tag == "H")
         {
@@ -41,7 +43,7 @@ public class H2OCreate : MonoBehaviour {
 
         if (ColWith1 && ColWith2)
         {
-            NoColWith = false;
+            ColWith = true;
             H_obj.SetActive(false);
             H2_obj.SetActive(false);
             O_obj.SetActive(false);
@@ -52,13 +54,15 @@ public class H2OCreate : MonoBehaviour {
             Botton5.SetActive(true);
             GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
+            totu05.SetActive(true);
+            totu04.SetActive(false);
         }
     }
-    void OnCollisionExit(Collision collision)
+    void OnCollisionExit(Collision collision) //當碰撞結束後
     {
         if (collision.gameObject.tag == "H")
         {
-            NoColWith = true;
+            ColWith = false;
             ColWith1 = false;
             H_obj.SetActive(true);
             H2_obj.SetActive(true);
@@ -75,10 +79,12 @@ public class H2OCreate : MonoBehaviour {
             Destroy(GameObject.Find("furnace(Clone)"));
             Destroy(GameObject.Find("ice(Clone)"));
             introd.SetActive(false);
+            totu05.SetActive(false);
+
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3"))
         {
-            NoColWith = true;
+            ColWith = false;
             ColWith2 = false;
             H_obj.SetActive(true);
             H2_obj.SetActive(true);
@@ -95,6 +101,7 @@ public class H2OCreate : MonoBehaviour {
             Destroy(GameObject.Find("furnace(Clone)"));
             Destroy(GameObject.Find("ice(Clone)"));
             introd.SetActive(false);
+            totu05.SetActive(false);
         }
     }
 
@@ -109,6 +116,7 @@ public class H2OCreate : MonoBehaviour {
         introd.SetActive(false);
         GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O.transform.parent = patentsPrefeb.transform;
+        totu05.SetActive(false);
     }
 
     public void button2Click()
@@ -122,6 +130,7 @@ public class H2OCreate : MonoBehaviour {
         introd.SetActive(false);
         GameObject H2O2 = Instantiate(Newthing2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O2.transform.parent = patentsPrefeb.transform;
+        totu05.SetActive(false);
     }
 
     public void button3Click()
@@ -137,6 +146,7 @@ public class H2OCreate : MonoBehaviour {
         kettle.transform.parent = patentsPrefeb.transform;
         GameObject furnace2 = Instantiate(furnace, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
         furnace2.transform.parent = patentsPrefeb.transform;
+        totu05.SetActive(false);
     }
 
     public void button4Click()
@@ -150,6 +160,7 @@ public class H2OCreate : MonoBehaviour {
         introd.SetActive(false);
         GameObject icee = Instantiate(ice, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         icee.transform.parent = patentsPrefeb.transform;
+        totu05.SetActive(false);
     }
 
 
@@ -163,6 +174,7 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("furnace(Clone)"));
         Destroy(GameObject.Find("ice(Clone)"));
         introd.SetActive(true);
+        totu05.SetActive(false);
     }
 
     public void CleanObj()
