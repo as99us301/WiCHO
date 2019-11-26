@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 977f6df4f2cd1a447957e1a9b3d7669f
+guid: fe0ed2726260f2e4fbc1735da81a4854
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -133,7 +133,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-  spritePackingTag: 
+  spritePackingTag: button
   userData: 
   assetBundleName: 
   assetBundleVariant: 
