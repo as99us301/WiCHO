@@ -31,7 +31,7 @@ public class H2OCreate : MonoBehaviour {
        
     }
 
-    void OnCollisionEnter(Collision collision) //當碰撞完成後
+    void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
         if (collision.gameObject.tag == "H")
         {
@@ -40,7 +40,16 @@ public class H2OCreate : MonoBehaviour {
             ColWith2 = true;
         }
 
+        if (ColWith1 && ColWith2)
+        {
+            GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+            H2O.transform.parent = patentsPrefeb.transform;
+        }
 
+    }
+
+    void OnCollisionStay(Collision collision) //碰撞進行中
+    {
         if (ColWith1 && ColWith2)
         {
             ColWith = true;
@@ -52,12 +61,11 @@ public class H2OCreate : MonoBehaviour {
             Botton3.SetActive(true);
             Botton4.SetActive(true);
             Botton5.SetActive(true);
-            GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-            H2O.transform.parent = patentsPrefeb.transform;
             totu05.SetActive(true);
             totu04.SetActive(false);
         }
     }
+
     void OnCollisionExit(Collision collision) //當碰撞結束後
     {
         if (collision.gameObject.tag == "H")
@@ -107,13 +115,7 @@ public class H2OCreate : MonoBehaviour {
 
     public void button1Click()
     {
-        Destroy(GameObject.Find("water(Clone)"));
-        Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        Destroy(GameObject.Find("kettle(Clone)"));
-        Destroy(GameObject.Find("fire(Clone)"));
-        Destroy(GameObject.Find("furnace(Clone)"));
-        Destroy(GameObject.Find("ice(Clone)"));
-        introd.SetActive(false);
+        CleanObj();
         GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O.transform.parent = patentsPrefeb.transform;
         totu05.SetActive(false);
@@ -121,13 +123,7 @@ public class H2OCreate : MonoBehaviour {
 
     public void button2Click()
     {
-        Destroy(GameObject.Find("water(Clone)"));
-        Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        Destroy(GameObject.Find("kettle(Clone)"));
-        Destroy(GameObject.Find("fire(Clone)"));
-        Destroy(GameObject.Find("furnace(Clone)"));
-        Destroy(GameObject.Find("ice(Clone)"));
-        introd.SetActive(false);
+        CleanObj();
         GameObject H2O2 = Instantiate(Newthing2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         H2O2.transform.parent = patentsPrefeb.transform;
         totu05.SetActive(false);
@@ -135,13 +131,8 @@ public class H2OCreate : MonoBehaviour {
 
     public void button3Click()
     {
-        Destroy(GameObject.Find("water(Clone)"));
-        Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        Destroy(GameObject.Find("kettle(Clone)"));
-        Destroy(GameObject.Find("fire(Clone)"));
-        Destroy(GameObject.Find("furnace(Clone)"));
-        Destroy(GameObject.Find("ice(Clone)"));
-        introd.SetActive(false);
+
+        CleanObj();
         GameObject kettle = Instantiate(Newthing3, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         kettle.transform.parent = patentsPrefeb.transform;
         GameObject furnace2 = Instantiate(furnace, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
@@ -151,13 +142,7 @@ public class H2OCreate : MonoBehaviour {
 
     public void button4Click()
     {
-        Destroy(GameObject.Find("water(Clone)"));
-        Destroy(GameObject.Find("H2O_Prefeb(Clone)"));
-        Destroy(GameObject.Find("kettle(Clone)"));
-        Destroy(GameObject.Find("fire(Clone)"));
-        Destroy(GameObject.Find("furnace(Clone)"));
-        Destroy(GameObject.Find("ice(Clone)"));
-        introd.SetActive(false);
+        CleanObj();
         GameObject icee = Instantiate(ice, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         icee.transform.parent = patentsPrefeb.transform;
         totu05.SetActive(false);
