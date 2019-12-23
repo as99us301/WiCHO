@@ -22,8 +22,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Botton5;
     private bool ColWith1 = false;
     private bool ColWith2 = false;
-    public GameObject totu04; //教學介紹畫面
-    public GameObject totu05; //教學介紹畫面
+
      
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
@@ -38,8 +37,6 @@ public class H2OCreate : MonoBehaviour {
         {
             GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
-            totu04.SetActive(false);
-            totu05.SetActive(true);           
         }
 
     }
@@ -133,7 +130,5 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("fire(Clone)"));
         Destroy(GameObject.Find("furnace(Clone)"));
         Destroy(GameObject.Find("ice(Clone)"));
-        introd.SetActive(false);
-        totu05.SetActive(false);
     }
 }
