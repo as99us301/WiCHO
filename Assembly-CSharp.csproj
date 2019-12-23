@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
      <Compile Include="Assets\Script\ButtonClick.cs" />
+     <Compile Include="Assets\Script\CheckInGameView.cs" />
      <Compile Include="Assets\Script\CheckinView.cs" />
      <Compile Include="Assets\Script\COCreate.cs" />
      <Compile Include="Assets\Script\Create.cs" />
@@ -62,6 +63,8 @@
      <Compile Include="Assets\Script\H2OCreate.cs" />
      <Compile Include="Assets\Script\lookatCamera.cs" />
      <Compile Include="Assets\Script\ScaleAndRotate.cs" />
+     <Compile Include="Assets\Script\SceneManager.cs" />
+     <Compile Include="Assets\Script\ScrollSnapRect.cs" />
      <Compile Include="Assets\Script\touch.cs" />
      <Compile Include="Assets\Script\TurnTest.cs" />
      <Compile Include="Assets\Script\waterEffectCreate.cs" />
@@ -74,6 +77,7 @@
      <None Include="Assets\StreamingAssets\Vuforia\WiCHO.xml" />
      <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
      <None Include="Assets\Model\WaterTest\Water.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />

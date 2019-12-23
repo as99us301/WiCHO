@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 180292278}
   - component: {fileID: 180292277}
   m_Layer: 5
-  m_Name: lab
+  m_Name: exb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bf4fd373fe227f34e9a1cd1fb02c76ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8061a022e3c0a314c9613b664e8aff33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -745,9 +745,8 @@ GameObject:
   - component: {fileID: 1127558494}
   - component: {fileID: 1127558493}
   - component: {fileID: 1127558492}
-  - component: {fileID: 1127558495}
   m_Layer: 5
-  m_Name: Gallery
+  m_Name: note
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,18 +808,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1127558493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1127558495}
-        m_MethodName: GallaryOnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1127558493
@@ -842,7 +830,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8323cfb492060df4e92414478421cd8a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8ca0177f6b15a846aa70ad389e63482, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -856,17 +844,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1127558490}
---- !u!114 &1127558495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1127558490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3363955e693cd2a439376b9d211b5b4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2031923716
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +857,7 @@ GameObject:
   - component: {fileID: 2031923718}
   - component: {fileID: 2031923721}
   m_Layer: 5
-  m_Name: ar
+  m_Name: game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,7 +921,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2031923721}
-        m_MethodName: AROnClick
+        m_MethodName: GameOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -975,7 +952,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 76e1be5c5ed3dcf4ab4bb04603c9f889, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 196f02fa6d3c0e341bb0c623e9df1035, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
