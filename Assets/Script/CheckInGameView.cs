@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class H_CheckInGameView : MonoBehaviour {
+public class CheckInGameView : MonoBehaviour {
 
 	public GameObject H1_ball, H2_ball, H3_ball, H4_ball, H5_ball, H6_ball, H7_ball, H8_ball, H9_ball, H10_ball;
 	private Renderer H1_Renderer, H2_Renderer, H3_Renderer, H4_Renderer, H5_Renderer, H6_Renderer, H7_Renderer, H8_Renderer, H9_Renderer, H10_Renderer;
