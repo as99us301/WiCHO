@@ -55,11 +55,11 @@
   <ItemGroup>
      <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
      <Compile Include="Assets\Script\ButtonClick.cs" />
+     <Compile Include="Assets\Script\CheckInGameView.cs" />
      <Compile Include="Assets\Script\CheckinView.cs" />
      <Compile Include="Assets\Script\COCreate.cs" />
      <Compile Include="Assets\Script\Create.cs" />
      <Compile Include="Assets\Script\Floating.cs" />
-     <Compile Include="Assets\Script\H_CheckInGameView.cs" />
      <Compile Include="Assets\Script\H2OCreate.cs" />
      <Compile Include="Assets\Script\lookatCamera.cs" />
      <Compile Include="Assets\Script\ScaleAndRotate.cs" />
