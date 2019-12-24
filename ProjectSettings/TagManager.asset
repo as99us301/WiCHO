@@ -17,6 +17,7 @@ TagManager:
   - H8
   - H9
   - H10
+  - tips
   layers:
   - Default
   - TransparentFX

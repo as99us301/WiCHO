@@ -11,8 +11,8 @@ public class CheckInGameView : MonoBehaviour {
 	private Renderer C1_Renderer, C2_Renderer, C3_Renderer, C4_Renderer, C5_Renderer, C6_Renderer, C7_Renderer, C8_Renderer, C9_Renderer, C10_Renderer;
 
 
-	public GameObject H_canva;
-	public bool HshowUp;
+	public GameObject H_canva, C_canva, O_canva, Ca_canva, Na_canva, Cu_canva, Mg_canva, S_canva, N_canva, OH_canva, Cl_canva;
+	public bool HshowUp, CshowUp, OshowUp, CashowUp, Nashowup, CushowUp, MgshowUp, SshowUp, NshowUp, OHshowUp, ClshowUp;
 	
 
 	// Use this for initialization
@@ -38,15 +38,41 @@ public class CheckInGameView : MonoBehaviour {
 		} else {
 			HshowUp = false;
 		}
-
-		if (HshowUp)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if (HshowUp) //H顯示
 		{
 			checkImage.SetActive(false);
 			H_canva.SetActive(true);
-		} else {
+		} else { //H消失
 			checkImage.SetActive(true);
 			H_canva.SetActive(false);
 		}
+
+
 
 	}
 

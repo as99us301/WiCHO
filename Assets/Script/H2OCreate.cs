@@ -15,15 +15,25 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Instantiate_Pos1;
     public GameObject Instantiate_Pos2;
     public GameObject patentsPrefeb;
-    public GameObject Botton1;
+
+
+    public GameObject ButtonCanvas;
+    /*public GameObject Botton1;
     public GameObject Botton2;
     public GameObject Botton3;
     public GameObject Botton4;
-    public GameObject Botton5;
+    public GameObject Botton5;*/
     private bool ColWith1 = false;
     private bool ColWith2 = false;
 
-     
+    public GameObject TipsCanvas;
+
+    void Start()
+    {
+        //TipsCanvas = GameObject.FindGameObjectsWithTag("tips");
+    }
+
+
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
         if (collision.gameObject.tag == "H")
@@ -35,6 +45,7 @@ public class H2OCreate : MonoBehaviour {
 
         if (ColWith1 && ColWith2)
         {
+            TipsCanvas.SetActive(false);
             GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
         }
@@ -48,11 +59,13 @@ public class H2OCreate : MonoBehaviour {
             H_obj.SetActive(false);
             H2_obj.SetActive(false);
             O_obj.SetActive(false);
-            Botton1.SetActive(true);
+            ButtonCanvas.SetActive(true);
+
+            /*Botton1.SetActive(true);
             Botton2.SetActive(true);
             Botton3.SetActive(true);
             Botton4.SetActive(true);
-            Botton5.SetActive(true);            
+            Botton5.SetActive(true);*/
         }
     }
 
@@ -64,11 +77,13 @@ public class H2OCreate : MonoBehaviour {
             H_obj.SetActive(true);
             H2_obj.SetActive(true);
             O_obj.SetActive(true);
-            Botton1.SetActive(false);
-            Botton2.SetActive(false);
-            Botton3.SetActive(false);
-            Botton4.SetActive(false);
-            Botton5.SetActive(false);
+            TipsCanvas.SetActive(true);
+            ButtonCanvas.SetActive(false);
+            /* Botton1.SetActive(false);
+             Botton2.SetActive(false);
+             Botton3.SetActive(false);
+             Botton4.SetActive(false);
+             Botton5.SetActive(false);*/
             CleanObj();
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3"))
@@ -77,11 +92,13 @@ public class H2OCreate : MonoBehaviour {
             H_obj.SetActive(true);
             H2_obj.SetActive(true);
             O_obj.SetActive(true);
-            Botton1.SetActive(false);
+            TipsCanvas.SetActive(true);
+            ButtonCanvas.SetActive(false);
+            /*Botton1.SetActive(false);
             Botton2.SetActive(false);
             Botton3.SetActive(false);
             Botton4.SetActive(false);
-            Botton5.SetActive(false);
+            Botton5.SetActive(false);*/
             CleanObj();
         }
     }
