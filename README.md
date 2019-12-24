@@ -1,2 +1,0 @@
-# WiCHO
-Vuforia AR
