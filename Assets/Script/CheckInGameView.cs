@@ -6,15 +6,14 @@ public class CheckInGameView : MonoBehaviour {
 
 	public GameObject H1_ball, H2_ball, H3_ball, H4_ball, H5_ball, H6_ball, H7_ball, H8_ball, H9_ball, H10_ball;
 	private Renderer H1_Renderer, H2_Renderer, H3_Renderer, H4_Renderer, H5_Renderer, H6_Renderer, H7_Renderer, H8_Renderer, H9_Renderer, H10_Renderer;
+	public GameObject checkImage;
 
 	public GameObject C1_ball, C2_ball, C3_ball, C4_ball, C5_ball, C6_ball, C7_ball, C8_ball, C9_ball, C10_ball;
 	private Renderer C1_Renderer, C2_Renderer, C3_Renderer, C4_Renderer, C5_Renderer, C6_Renderer, C7_Renderer, C8_Renderer, C9_Renderer, C10_Renderer;
 
-
 	public GameObject H_canva, C_canva, O_canva, Ca_canva, Na_canva, Cu_canva, Mg_canva, S_canva, N_canva, OH_canva, Cl_canva;
 	public bool HshowUp, CshowUp, OshowUp, CashowUp, Nashowup, CushowUp, MgshowUp, SshowUp, NshowUp, OHshowUp, ClshowUp;
 
-	public GameObject checkImage;
 
 	// Use this for initialization
 	void Start () {
@@ -43,7 +42,6 @@ public class CheckInGameView : MonoBehaviour {
 			checkImage.SetActive(true);
 			H_canva.SetActive(false);
 		}
-		
 		if (HshowUp) //H顯示
 		{
 			checkImage.SetActive(false);
@@ -52,7 +50,6 @@ public class CheckInGameView : MonoBehaviour {
 			checkImage.SetActive(true);
 			H_canva.SetActive(false);
 		}
-	
 	}
 
 	//回傳
