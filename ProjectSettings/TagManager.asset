@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - tips
+  - O
+  - H
+  - H5
+  - H10
+  - H4
+  - H9
+  - H2
+  - H8
+  - H6
+  - H7
+  - H3
+  - C
+  - kettle
   layers:
   - Default
   - TransparentFX
@@ -15,7 +29,7 @@ TagManager:
   - 
   - PostProcessing
   - 
-  - 
+  - Num3
   - 
   - 
   - 
