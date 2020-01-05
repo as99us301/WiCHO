@@ -12,6 +12,7 @@ public class Otest : MonoBehaviour
 
     void Start()
     {
+        //test = gameObject.GetComponent<TipscheckinView>().HshowUp;
         O1_Renderer = O1_ball.GetComponent<MeshRenderer>();
         O2_Renderer = O2_ball.GetComponent<MeshRenderer>();
     }
