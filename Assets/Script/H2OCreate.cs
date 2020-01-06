@@ -23,6 +23,8 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Botton5;
     private bool ColWith1 = false;
     private bool ColWith2 = false;
+
+    public GameObject Hcanvas, Ocanvas;
        
     void Start()
     {
@@ -41,6 +43,7 @@ public class H2OCreate : MonoBehaviour {
 
         if (ColWith1 && ColWith2)
         {
+            CloseCanvas();
             GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             H2O.transform.parent = patentsPrefeb.transform;
         }
@@ -143,5 +146,11 @@ public class H2OCreate : MonoBehaviour {
         Destroy(GameObject.Find("fire(Clone)"));
         Destroy(GameObject.Find("furnace(Clone)"));
         Destroy(GameObject.Find("ice(Clone)"));
+    }
+
+    public void CloseCanvas()
+    {
+        Hcanvas.SetActive(false);
+        Ocanvas.SetActive(false);
     }
 }

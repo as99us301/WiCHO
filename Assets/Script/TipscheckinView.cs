@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class TipscheckinView : MonoBehaviour
 {
-    private Renderer H1_Renderer, H2_Renderer;
-    public GameObject H1_ball, H2_ball;
-       
+    private Renderer H1_Renderer, H2_Renderer, H3_Renderer;
+    public GameObject H1_ball, H2_ball, H3_ball;
     public GameObject H_canva;
     public bool HshowUp;
 
@@ -15,10 +14,11 @@ public class TipscheckinView : MonoBehaviour
     {       
         H1_Renderer = H1_ball.GetComponent<MeshRenderer>();
         H2_Renderer = H2_ball.GetComponent<MeshRenderer>();
+        H3_Renderer = H3_ball.GetComponent<MeshRenderer>();
     }
     private void Update()
     {
-        if (H1_Renderer.isVisible || H2_Renderer.isVisible)
+        if (H1_Renderer.isVisible || H2_Renderer.isVisible || H3_Renderer.isVisible)
         {
             HshowUp = true;
         }
@@ -43,5 +43,9 @@ public class TipscheckinView : MonoBehaviour
     public bool H2_IsVisible()
     {
         return H2_Renderer.isVisible;
+    }
+    public bool H3_IsVisible()
+    {
+        return H3_Renderer.isVisible;
     }
 }

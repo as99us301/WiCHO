@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
     <Compile Include="Assets\Script\ButtonClick.cs" />
+    <Compile Include="Assets\Script\CheckCInView.cs" />
     <Compile Include="Assets\Script\CheckInView.cs" />
     <Compile Include="Assets\Script\COCreate.cs" />
     <Compile Include="Assets\Script\Create.cs" />

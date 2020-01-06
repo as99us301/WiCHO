@@ -22,12 +22,13 @@ public class SceneManager : MonoBehaviour {
     {
         Application.LoadLevel(2);
     }
-
-
     public void ExbisionOnClick()
     {
-        Application.LoadLevel(1);
+        Application.LoadLevel(3);
     }
-
+    public void backtoIndex()
+    {
+        Application.LoadLevel(0);
+    }
 
 }
