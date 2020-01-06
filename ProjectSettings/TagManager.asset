@@ -18,6 +18,9 @@ TagManager:
   - H3
   - C
   - kettle
+  - Element
+  - O2
+  - O3
   layers:
   - Default
   - TransparentFX
