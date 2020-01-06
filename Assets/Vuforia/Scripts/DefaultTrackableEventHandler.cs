@@ -80,9 +80,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     #endregion // PUBLIC_METHODS
 
     #region PROTECTED_METHODS
+    //public UnityEngine.Video.VideoPlayer videoPlayer;
+    public GameObject videoPlayer;
 
     protected virtual void OnTrackingFound()
     {
+        //videoPlayer.Play();
+        if (videoPlayer != null) videoPlayer.SetActive(true);
+        
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -103,6 +108,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
+        //videoPlayer.Stop();
+        if (videoPlayer != null) videoPlayer.SetActive(false);
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);

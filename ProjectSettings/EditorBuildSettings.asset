@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewGame.unity
     guid: d39f4c8647c479a4eaf99cd7405f6cae
+  - enabled: 0
+    path: Assets/Scenes/Exhibition.unity
+    guid: f3e89642ee222024f83101dfe90b3720
   m_configObjects: {}
