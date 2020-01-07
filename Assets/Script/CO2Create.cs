@@ -11,17 +11,17 @@ public class CO2Create : MonoBehaviour
     private bool ColWith1 = false;
     private bool ColWith2 = false;
 
-
     public GameObject[] ElementArray;
     public GameObject Ccanvas, Ocanvas;
     private GameObject checkImage;
+
+    public bool CO2Compelete;
 
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
         ElementArray = GameObject.FindGameObjectsWithTag("Element");
     }
-
 
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
@@ -36,14 +36,24 @@ public class CO2Create : MonoBehaviour
 
         if (ColWith1 && ColWith2)
         {
+            CO2Compelete = true;
             checkImage.SetActive(false);
+           
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(false);
             }
-            CloseCanvas();
+            CloseCanvas();                 
+        }
+
+        if (CO2Compelete)
+        {
             GameObject CO2 = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
             CO2.transform.parent = patentsPrefeb.transform;
+        }
+        else 
+        {
+            Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
         }
 
     }
@@ -62,20 +72,24 @@ public class CO2Create : MonoBehaviour
         if (collision.gameObject.tag == "C")
         {
             ColWith1 = false;
-            for (int i = 0; i < ElementArray.Length; i++)
-            {
-                ElementArray[i].gameObject.SetActive(true);
-            }
-            Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Num4"))
-        {
             ColWith2 = false;
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(true);
             }
             Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
+            CO2Compelete = false;
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Num4"))
+        {
+            ColWith1 = false;
+            ColWith2 = false;
+            for (int i = 0; i < ElementArray.Length; i++)
+            {
+                ElementArray[i].gameObject.SetActive(true);
+            }
+            Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
+            CO2Compelete = false;
         }
     }
 

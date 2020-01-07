@@ -18,8 +18,8 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Botton3;
     public GameObject Botton4;
     public GameObject Botton5;
-    private bool ColWith1 = false;
-    private bool ColWith2 = false;
+    public bool ColWith1H;
+    public bool ColWith2H;
 
     public GameObject Hcanvas, Ocanvas;
     public GameObject[] ElementArray;
@@ -31,17 +31,22 @@ public class H2OCreate : MonoBehaviour {
         ElementArray = GameObject.FindGameObjectsWithTag("Element");
     }
 
+    private void Update()
+    {
+        
+    }
 
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
         if (collision.gameObject.tag == "H")
         {
-            ColWith1 = true;
-        } else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3")) {
-            ColWith2 = true;
+            ColWith1H = true;
+        } else if (collision.gameObject.layer == LayerMask.NameToLayer("Num5"))
+        {
+            ColWith2H = true;
         }
 
-        if (ColWith1 && ColWith2)
+        if (ColWith1H && ColWith2H)
         {
             CloseCanvas();
             for (int i = 0; i < ElementArray.Length; i++)
@@ -57,7 +62,7 @@ public class H2OCreate : MonoBehaviour {
 
     void OnCollisionStay(Collision collision) //碰撞進行中
     {
-        if (ColWith1 && ColWith2)
+        if (ColWith1H && ColWith2H)
         {
             ButtonCanvas.SetActive(true);
             Botton1.SetActive(true);
@@ -72,7 +77,8 @@ public class H2OCreate : MonoBehaviour {
     {
         if (collision.gameObject.tag == "H")
         {
-            ColWith1 = false;
+            ColWith1H = false;
+            ColWith2H = false;
             ButtonCanvas.SetActive(false);
             Botton1.SetActive(false);
             Botton2.SetActive(false);
@@ -85,9 +91,10 @@ public class H2OCreate : MonoBehaviour {
                 ElementArray[i].gameObject.SetActive(true);
             }
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Num3"))
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Num5"))
         {
-            ColWith2 = false;
+            ColWith1H = false;
+            ColWith2H = false;
             ButtonCanvas.SetActive(false);
             Botton1.SetActive(false);
             Botton2.SetActive(false);

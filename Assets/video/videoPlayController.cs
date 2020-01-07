@@ -15,6 +15,7 @@ public class videoPlayController : MonoBehaviour
     private void OnDisabled()
     {
         if (vp != null) {
+
             vp.Stop();
             Graphics.Blit(defaultTexture, renderTexture);
         
