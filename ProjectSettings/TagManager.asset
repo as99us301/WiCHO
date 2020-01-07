@@ -21,6 +21,8 @@ TagManager:
   - Element
   - O2
   - O3
+  - C2
+  - C3
   layers:
   - Default
   - TransparentFX
@@ -33,7 +35,7 @@ TagManager:
   - PostProcessing
   - 
   - Num3
-  - 
+  - Num4
   - 
   - 
   - 

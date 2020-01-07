@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2f62833add2d9746b0718b1acbb9e6a
+guid: 995be3b7d28235e4eb464614a9c361e4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -16,7 +16,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sphere003_Sphere003Mat
-    second: {fileID: 2100000, guid: 074f190e59430194cabeb54764054b96, type: 2}
+    second: {fileID: 2100000, guid: 07270727dbbbab748b42021c297f66bd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,7 +75,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1

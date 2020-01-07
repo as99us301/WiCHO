@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\H2OCreate.cs" />
     <Compile Include="Assets\Script\lookatCamera.cs" />
+    <Compile Include="Assets\Script\MutiElementShowTips.cs" />
     <Compile Include="Assets\Script\Otest.cs" />
     <Compile Include="Assets\Script\ScaleAndRotate.cs" />
     <Compile Include="Assets\Script\SceneManager.cs" />
