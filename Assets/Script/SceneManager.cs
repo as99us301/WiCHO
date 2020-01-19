@@ -7,7 +7,7 @@ public class SceneManager : MonoBehaviour {
 
 	public void GallaryOnClick()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(4);
     }
     public void AROnClick()
     {
@@ -30,5 +30,4 @@ public class SceneManager : MonoBehaviour {
     {
         Application.LoadLevel(0);
     }
-
 }

@@ -8,6 +8,7 @@ public class lookatCamera : MonoBehaviour {
     public Transform Camera;
 
     // Update is called once per frame
+
     void Update()
     {
         obj.LookAt(Camera);
