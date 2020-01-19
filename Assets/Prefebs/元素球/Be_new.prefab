@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879308755563215210}
   - component: {fileID: 7461663183776757380}
+  - component: {fileID: 3640611702896410439}
   m_Layer: 0
   m_Name: Be_new
   m_TagString: Untagged
@@ -47,6 +48,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0.05, z: 0}
   frequency: 0.2
   playAwake: 1
+--- !u!114 &3640611702896410439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2299985319778503098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631529b163ee8a141b5c2d4016414127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 35
 --- !u!1 &4271275231164354554
 GameObject:
   m_ObjectHideFlags: 0

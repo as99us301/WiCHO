@@ -23,6 +23,16 @@ TagManager:
   - O3
   - C2
   - C3
+  - Na1
+  - Na2
+  - Na3
+  - Na4
+  - Na5
+  - Cl1
+  - Cl2
+  - Cl3
+  - Cl4
+  - Cl5
   layers:
   - Default
   - TransparentFX
@@ -37,8 +47,8 @@ TagManager:
   - Num3
   - Num4
   - Num5
-  - 
-  - 
+  - 'Num6 '
+  - Num7
   - 
   - 
   - 

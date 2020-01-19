@@ -17,9 +17,9 @@ public class MutiElementShowTips : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HshowUp = gameObject.GetComponent<TipscheckinView>().HshowUp;
-        OshowUp = gameObject.GetComponent<Otest>().OshowUp;
-        CshowUp = gameObject.GetComponent<CheckCInView>().CshowUp;
+        HshowUp = gameObject.GetComponent<HcheckinView>().HshowUp;
+        OshowUp = gameObject.GetComponent<OcheckinView>().OshowUp;
+        CshowUp = gameObject.GetComponent<CcheckinView>().CshowUp;
 
         if (HshowUp && OshowUp)
         {
