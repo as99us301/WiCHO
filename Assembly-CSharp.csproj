@@ -64,14 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
-    <Compile Include="Assets\Scenes\testPrefeb\ElementButton.cs" />
-    <Compile Include="Assets\Script\BringToFront.cs" />
-    <Compile Include="Assets\Script\ButtonClick.cs" />
     <Compile Include="Assets\Script\CheckCInView.cs" />
     <Compile Include="Assets\Script\CheckInView.cs" />
     <Compile Include="Assets\Script\CO2Create.cs" />
     <Compile Include="Assets\Script\COCreate.cs" />
     <Compile Include="Assets\Script\Create.cs" />
+    <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\H2OCreate.cs" />
     <Compile Include="Assets\Script\lookatCamera.cs" />
@@ -91,7 +89,6 @@
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\test.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\WiCHO.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
@@ -99,6 +96,7 @@
     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
     <None Include="Assets\Course Library\_Source_Files\Materials\UnlitVertexColour_Alpha.shader" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\test.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\ARtest.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />

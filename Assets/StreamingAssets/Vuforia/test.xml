@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="O_3" size="1.000000 0.998592" />
-    <ImageTarget name="O_2" size="1.000000 0.998592" />
-    <ImageTarget name="O_1" size="1.000000 0.998592" />
-    <ImageTarget name="H_3" size="1.000000 0.998592" />
-    <ImageTarget name="H_2" size="1.000000 0.998592" />
-    <ImageTarget name="H_1" size="1.000000 1.000000" />
-    <ImageTarget name="C_3" size="1.000000 0.998592" />
-    <ImageTarget name="C_2" size="1.000000 1.000000" />
-    <ImageTarget name="C_1" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_3" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_O_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_1" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_3" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_1" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_C_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_3" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_1" size="1.000000 1.000000" />
   </Tracking>
 </QCARConfig>
