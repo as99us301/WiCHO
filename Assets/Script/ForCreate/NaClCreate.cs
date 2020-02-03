@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class NaClCreate : MonoBehaviour
 {
-    public GameObject Newthing;
+    public GameObject NaCl;
     public GameObject Instantiate_Pos1;
     public GameObject Instantiate_Pos2;
     public GameObject patentsPrefeb;
-    private bool ColWith1 = false;
-    private bool ColWith2 = false;
+    private bool ColWithP1 = false;
+    private bool ColWithP2 = false;
 
     public GameObject[] ElementArray;
     public GameObject Nacanvas, Clcanvas;
@@ -27,14 +27,14 @@ public class NaClCreate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Na")
         {
-            ColWith1 = true;
+            ColWithP1 = true;
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num6"))
         {
-            ColWith2 = true;
+            ColWithP2 = true;
         }
 
-        if (ColWith1 && ColWith2)
+        if (ColWithP1 && ColWithP2)
         {
             NaClCompelete = true;
             checkImage.SetActive(false);
@@ -48,8 +48,8 @@ public class NaClCreate : MonoBehaviour
 
         if (NaClCompelete)
         {
-            GameObject NaCl = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-            NaCl.transform.parent = patentsPrefeb.transform;
+            GameObject NaCl_obj = Instantiate(NaCl, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+            NaCl_obj.transform.parent = patentsPrefeb.transform;
         }
         else
         {
@@ -60,7 +60,7 @@ public class NaClCreate : MonoBehaviour
 
     void OnCollisionStay(Collision collision) //碰撞進行中
     {
-        if (ColWith1 && ColWith2)
+        if (ColWithP1 && ColWithP2)
         {
             checkImage.SetActive(false);
             return;
@@ -71,8 +71,8 @@ public class NaClCreate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Na")
         {
-            ColWith1 = false;
-            ColWith2 = false;
+            ColWithP1 = false;
+            ColWithP2 = false;
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(true);
@@ -82,8 +82,8 @@ public class NaClCreate : MonoBehaviour
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Num6"))
         {
-            ColWith1 = false;
-            ColWith2 = false;
+            ColWithP1 = false;
+            ColWithP2 = false;
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(true);

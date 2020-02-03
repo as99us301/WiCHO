@@ -1196,8 +1196,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 0.998592
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 0.998592
 --- !u!1 &35599308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,16 +1769,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff49d9f0534de1f4c8cd17ba1bc53bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 3}
-  Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 3}
-  Newthing3: {fileID: 1777463324284880, guid: a511ea257ab2a1b44932c5f824f51c0a, type: 3}
+  Newthing: {fileID: 0}
+  Newthing2: {fileID: 0}
+  Newthing3: {fileID: 0}
   furnace: {fileID: 0}
-  introd: {fileID: 1953152113}
-  ice: {fileID: 1746537176241646, guid: 19d95a1968446b342abaa366cb22c482, type: 3}
-  Instantiate_Pos1: {fileID: 270839774}
-  Instantiate_Pos2: {fileID: 1170223594}
-  patentsPrefeb: {fileID: 1467220534}
-  ButtonCanvas: {fileID: 2025447752}
+  introd: {fileID: 0}
+  ice: {fileID: 0}
+  Instantiate_Pos1: {fileID: 0}
+  Instantiate_Pos2: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
+  ButtonCanvas: {fileID: 0}
   Botton1: {fileID: 1284275522}
   Botton2: {fileID: 191631602}
   Botton3: {fileID: 1876979577}
@@ -3421,8 +3421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fe9caf0e5044e818640a0900d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa,
-    type: 3}
+  NaCl: {fileID: 0}
   Instantiate_Pos1: {fileID: 367574996}
   Instantiate_Pos2: {fileID: 826470435}
   patentsPrefeb: {fileID: 1734008658}
@@ -4331,8 +4330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fe9caf0e5044e818640a0900d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa,
-    type: 3}
+  NaCl: {fileID: 0}
   Instantiate_Pos1: {fileID: 1649802384}
   Instantiate_Pos2: {fileID: 341734986}
   patentsPrefeb: {fileID: 1337036083}
@@ -12169,8 +12167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fe9caf0e5044e818640a0900d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa,
-    type: 3}
+  NaCl: {fileID: 0}
   Instantiate_Pos1: {fileID: 1542353235}
   Instantiate_Pos2: {fileID: 1529330844}
   patentsPrefeb: {fileID: 694395764}
@@ -15312,8 +15309,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 0.998592
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 0.998592
 --- !u!1 &519837557
 GameObject:
   m_ObjectHideFlags: 0
@@ -15761,16 +15758,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff49d9f0534de1f4c8cd17ba1bc53bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 3}
-  Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 3}
-  Newthing3: {fileID: 1777463324284880, guid: a511ea257ab2a1b44932c5f824f51c0a, type: 3}
+  Newthing: {fileID: 0}
+  Newthing2: {fileID: 0}
+  Newthing3: {fileID: 0}
   furnace: {fileID: 0}
-  introd: {fileID: 1473998772}
-  ice: {fileID: 1746537176241646, guid: 19d95a1968446b342abaa366cb22c482, type: 3}
-  Instantiate_Pos1: {fileID: 1242524497}
-  Instantiate_Pos2: {fileID: 2073837854}
-  patentsPrefeb: {fileID: 1387414462}
-  ButtonCanvas: {fileID: 1366477623}
+  introd: {fileID: 0}
+  ice: {fileID: 0}
+  Instantiate_Pos1: {fileID: 0}
+  Instantiate_Pos2: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
+  ButtonCanvas: {fileID: 0}
   Botton1: {fileID: 1365648305}
   Botton2: {fileID: 46268479}
   Botton3: {fileID: 1571611874}
@@ -29594,8 +29591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fe9caf0e5044e818640a0900d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa,
-    type: 3}
+  NaCl: {fileID: 0}
   Instantiate_Pos1: {fileID: 1220695147}
   Instantiate_Pos2: {fileID: 826470435}
   patentsPrefeb: {fileID: 1818147114}
@@ -36864,8 +36860,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 0.998592
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 0.998592
 --- !u!1 &1495039066
 GameObject:
   m_ObjectHideFlags: 0
@@ -39368,16 +39364,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff49d9f0534de1f4c8cd17ba1bc53bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 3}
-  Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 3}
-  Newthing3: {fileID: 1777463324284880, guid: a511ea257ab2a1b44932c5f824f51c0a, type: 3}
+  Newthing: {fileID: 0}
+  Newthing2: {fileID: 0}
+  Newthing3: {fileID: 0}
   furnace: {fileID: 0}
-  introd: {fileID: 1804943674}
-  ice: {fileID: 1746537176241646, guid: 19d95a1968446b342abaa366cb22c482, type: 3}
-  Instantiate_Pos1: {fileID: 1313133308}
-  Instantiate_Pos2: {fileID: 1546182428}
-  patentsPrefeb: {fileID: 2017386610}
-  ButtonCanvas: {fileID: 1656755406}
+  introd: {fileID: 0}
+  ice: {fileID: 0}
+  Instantiate_Pos1: {fileID: 0}
+  Instantiate_Pos2: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
+  ButtonCanvas: {fileID: 0}
   Botton1: {fileID: 1430767088}
   Botton2: {fileID: 661226822}
   Botton3: {fileID: 249063875}
@@ -39973,8 +39969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fe9caf0e5044e818640a0900d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa,
-    type: 3}
+  NaCl: {fileID: 0}
   Instantiate_Pos1: {fileID: 194925551}
   Instantiate_Pos2: {fileID: 300075600}
   patentsPrefeb: {fileID: 1811728541}
@@ -42225,8 +42220,7 @@ Transform:
 --- !u!114 &1687669545
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114292674011418210, guid: 45b9795f6b0b8a64ab34b3fb9846976c,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687669543}
@@ -42235,16 +42229,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff49d9f0534de1f4c8cd17ba1bc53bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 3}
-  Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 3}
-  Newthing3: {fileID: 1777463324284880, guid: a511ea257ab2a1b44932c5f824f51c0a, type: 3}
+  Newthing: {fileID: 0}
+  Newthing2: {fileID: 0}
+  Newthing3: {fileID: 0}
   furnace: {fileID: 0}
-  introd: {fileID: 383410413}
-  ice: {fileID: 1746537176241646, guid: 19d95a1968446b342abaa366cb22c482, type: 3}
-  Instantiate_Pos1: {fileID: 1012498621}
-  Instantiate_Pos2: {fileID: 989026474}
-  patentsPrefeb: {fileID: 86372732}
-  ButtonCanvas: {fileID: 539803297}
+  introd: {fileID: 0}
+  ice: {fileID: 0}
+  Instantiate_Pos1: {fileID: 0}
+  Instantiate_Pos2: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
+  ButtonCanvas: {fileID: 0}
   Botton1: {fileID: 519837557}
   Botton2: {fileID: 364734172}
   Botton3: {fileID: 1435385004}
@@ -44058,16 +44052,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff49d9f0534de1f4c8cd17ba1bc53bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Newthing: {fileID: 1373749568143434, guid: b2b042cd16bd1c64c9db47d0afc74943, type: 3}
-  Newthing2: {fileID: 1353979624667116, guid: cf4c373ac7e2ae74583dd43370f6cba9, type: 3}
-  Newthing3: {fileID: 1777463324284880, guid: a511ea257ab2a1b44932c5f824f51c0a, type: 3}
+  Newthing: {fileID: 0}
+  Newthing2: {fileID: 0}
+  Newthing3: {fileID: 0}
   furnace: {fileID: 0}
-  introd: {fileID: 217645495}
-  ice: {fileID: 1746537176241646, guid: 19d95a1968446b342abaa366cb22c482, type: 3}
-  Instantiate_Pos1: {fileID: 652551771}
-  Instantiate_Pos2: {fileID: 1975867381}
-  patentsPrefeb: {fileID: 135848160}
-  ButtonCanvas: {fileID: 1344963420}
+  introd: {fileID: 0}
+  ice: {fileID: 0}
+  Instantiate_Pos1: {fileID: 0}
+  Instantiate_Pos2: {fileID: 0}
+  patentsPrefeb: {fileID: 0}
+  ButtonCanvas: {fileID: 0}
   Botton1: {fileID: 1030026893}
   Botton2: {fileID: 41846554}
   Botton3: {fileID: 1157184506}
@@ -44471,8 +44465,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 1
 --- !u!1 &1813756135
 GameObject:
   m_ObjectHideFlags: 0
@@ -44847,8 +44841,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 1
 --- !u!1 &1818242257
 GameObject:
   m_ObjectHideFlags: 0
@@ -45272,8 +45266,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/test.xml
   mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 1.0000005
-  mHeight: 0.9985925
+  mWidth: 1
+  mHeight: 1
 --- !u!4 &1840127584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4960536824575750, guid: 7567cd119805ca1499c73c0b2ed88622,
