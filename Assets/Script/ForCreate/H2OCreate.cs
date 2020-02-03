@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class H2OCreate : MonoBehaviour {
-    public GameObject Newthing;
-    public GameObject Newthing2;
-    public GameObject Newthing3;
-    public GameObject furnace;
+    public GameObject H2O;
+    public GameObject H2O2;
+    public GameObject H2O3;
     public GameObject introd; //化合物簡介
     public GameObject ice;
     public GameObject Instantiate_Pos1;
-    public GameObject Instantiate_Pos2;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
     public GameObject Botton1;
@@ -20,28 +18,20 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Botton5;
     public bool ColWith1H;
     public bool ColWith2H;
-
     public GameObject Hcanvas, Ocanvas;
     public GameObject[] ElementArray;
-
     private GameObject checkImage;
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
         ElementArray = GameObject.FindGameObjectsWithTag("Element");
     }
-
-    private void Update()
-    {
-        
-    }
-
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
         if (collision.gameObject.tag == "H")
         {
             ColWith1H = true;
-        } else if (collision.gameObject.layer == LayerMask.NameToLayer("Num5"))
+        } else if (collision.gameObject.layer == LayerMask.NameToLayer("HLayer"))
         {
             ColWith2H = true;
         }
@@ -54,10 +44,9 @@ public class H2OCreate : MonoBehaviour {
                 ElementArray[i].gameObject.SetActive(false);
             }
             checkImage.SetActive(false);
-            GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-            H2O.transform.parent = patentsPrefeb.transform;
+            GameObject H2O1 = Instantiate(H2O, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+            H2O1.transform.parent = patentsPrefeb.transform;
         }
-
     }
 
     void OnCollisionStay(Collision collision) //碰撞進行中
@@ -91,7 +80,7 @@ public class H2OCreate : MonoBehaviour {
                 ElementArray[i].gameObject.SetActive(true);
             }
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Num5"))
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("HLayer"))
         {
             ColWith1H = false;
             ColWith2H = false;
@@ -113,26 +102,24 @@ public class H2OCreate : MonoBehaviour {
     {
         CleanObj();
         introd.SetActive(false);
-        GameObject H2O = Instantiate(Newthing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-        H2O.transform.parent = patentsPrefeb.transform;
+        GameObject H2O0 = Instantiate(H2O, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        H2O0.transform.parent = patentsPrefeb.transform;
     }
 
     public void button2Click() //液體按鈕
     {      
         CleanObj();
         introd.SetActive(false);
-        GameObject H2O2 = Instantiate(Newthing2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-        H2O2.transform.parent = patentsPrefeb.transform;
+        GameObject H2O02 = Instantiate(H2O2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        H2O02.transform.parent = patentsPrefeb.transform;
     }
 
     public void button3Click() //氣體按鈕
     {
         CleanObj();
         introd.SetActive(false);
-        GameObject kettle = Instantiate(Newthing3, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        GameObject kettle = Instantiate(H2O3, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         kettle.transform.parent = patentsPrefeb.transform;
-        GameObject furnace2 = Instantiate(furnace, Instantiate_Pos2.transform.position, Instantiate_Pos2.transform.rotation);
-        furnace2.transform.parent = patentsPrefeb.transform;
     }
 
     public void button4Click() //固體按鈕
