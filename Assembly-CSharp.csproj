@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Model\WaterTest\Wobble.cs" />
+    <Compile Include="Assets\Orginal FBX\Model\WaterTest\Wobble.cs" />
     <Compile Include="Assets\Script\Create.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
@@ -85,10 +85,10 @@
     <Compile Include="Assets\Script\touch.cs" />
     <Compile Include="Assets\Script\TurnTest.cs" />
     <Compile Include="Assets\Script\waterEffectCreate.cs" />
-    <Compile Include="Assets\video\videoPlayController.cs" />
+    <Compile Include="Assets\UI\video\videoPlayController.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
-    <None Include="Assets\Model\WaterTest\liquid.shader" />
+    <None Include="Assets\Orginal FBX\Model\WaterTest\liquid.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
