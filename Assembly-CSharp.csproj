@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Orginal FBX\Model\WaterTest\Wobble.cs" />
-    <Compile Include="Assets\Script\Create.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\ForCreate\CO2Create.cs" />
@@ -76,6 +75,7 @@
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\HcheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\MutiElementShowTips.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\NacheckinView.cs" />
+    <Compile Include="Assets\Script\ForTips&amp;CheckInView\NaCltIPS.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\OcheckinView.cs" />
     <Compile Include="Assets\Script\lookatCamera.cs" />
     <Compile Include="Assets\Script\ScaleAndRotate.cs" />

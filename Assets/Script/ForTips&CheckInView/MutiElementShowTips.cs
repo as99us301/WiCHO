@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class MutiElementShowTips : MonoBehaviour
 {
-    public bool HshowUp, OshowUp, CshowUp;
+    private bool HshowUp, OshowUp, CshowUp;
     public GameObject Hcanva, Ocanva, Ccanva, OandHcanva, CandOcanva, CandHcanva;
-    //public GameObject[] TipsCanvaArray;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-      
-    }
-
-    // Update is called once per frame
     void Update()
     {
         HshowUp = gameObject.GetComponent<HcheckinView>().HshowUp;
@@ -27,12 +19,12 @@ public class MutiElementShowTips : MonoBehaviour
             Ocanva.SetActive(false);
             Hcanva.SetActive(false);
         }
-        else 
+        else
         {
             OandHcanva.SetActive(false);
         }
 
-        if (CshowUp && OshowUp) 
+        if (CshowUp && OshowUp)
         {
             CandOcanva.SetActive(true);
             Ccanva.SetActive(false);
@@ -53,11 +45,5 @@ public class MutiElementShowTips : MonoBehaviour
         {
             CandHcanva.SetActive(false);
         }
-
-
-        /*for (int i = 0; i < TipsCanvaArray.Length; i++)
-        {
-            TipsCanvaArray[i].gameObject.SetActive(false);
-        }*/
     }
 }
