@@ -9,11 +9,6 @@ public class NaClCreate : MonoBehaviour
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
-    public GameObject Botton1;
-    public GameObject Botton2;
-    public GameObject Botton3;
-    public GameObject Botton4;
-    public GameObject Botton5;
     public bool NaClDone;
     public GameObject Nacanvas, Clcanvas;
     public GameObject[] ElementArray;
@@ -27,7 +22,7 @@ public class NaClCreate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Na")
         {
-            NaClDone = true;
+           NaClDone = true;
             
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
@@ -57,12 +52,7 @@ public class NaClCreate : MonoBehaviour
         if (collision.gameObject.tag == "Na")
         {
             NaClDone = false;
-            /*ButtonCanvas.SetActive(false);
-            Botton1.SetActive(false);
-            Botton2.SetActive(false);
-            Botton3.SetActive(false);
-            Botton4.SetActive(false);
-            Botton5.SetActive(false);*/
+            ButtonCanvas.SetActive(false);
             CleanObj();
             for (int i = 0; i < ElementArray.Length; i++)
             {
@@ -72,12 +62,7 @@ public class NaClCreate : MonoBehaviour
         else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
         {
             NaClDone = false;
-            /*ButtonCanvas.SetActive(false);
-            Botton1.SetActive(false);
-            Botton2.SetActive(false);
-            Botton3.SetActive(false);
-            Botton4.SetActive(false);
-            Botton5.SetActive(false);*/
+            ButtonCanvas.SetActive(false);
             CleanObj();
             for (int i = 0; i < ElementArray.Length; i++)
             {

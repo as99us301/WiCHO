@@ -9,11 +9,6 @@ public class CO2Create : MonoBehaviour
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
-    public GameObject Botton1;
-    public GameObject Botton2;
-    public GameObject Botton3;
-    public GameObject Botton4;
-    public GameObject Botton5;
     public bool ColWith1O;
     public bool ColWith2O;
     public GameObject Ccanvas, Ocanvas;
@@ -53,11 +48,6 @@ public class CO2Create : MonoBehaviour
         if (ColWith1O && ColWith2O)
         {
             ButtonCanvas.SetActive(true);
-            Botton1.SetActive(true);
-            Botton2.SetActive(true);
-            Botton3.SetActive(true);
-            Botton4.SetActive(true);
-            Botton5.SetActive(true);
         }
     }
 
@@ -68,11 +58,6 @@ public class CO2Create : MonoBehaviour
             ColWith1O = false;
             ColWith2O = false;
             ButtonCanvas.SetActive(false);
-            Botton1.SetActive(false);
-            Botton2.SetActive(false);
-            Botton3.SetActive(false);
-            Botton4.SetActive(false);
-            Botton5.SetActive(false);
             CleanObj();
             for (int i = 0; i < ElementArray.Length; i++)
             {
@@ -84,11 +69,6 @@ public class CO2Create : MonoBehaviour
             ColWith1O = false;
             ColWith2O = false;
             ButtonCanvas.SetActive(false);
-            Botton1.SetActive(false);
-            Botton2.SetActive(false);
-            Botton3.SetActive(false);
-            Botton4.SetActive(false);
-            Botton5.SetActive(false);
             CleanObj();
             for (int i = 0; i < ElementArray.Length; i++)
             {
