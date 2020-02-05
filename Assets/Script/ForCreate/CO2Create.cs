@@ -5,7 +5,7 @@ using UnityEngine;
 public class CO2Create : MonoBehaviour
 {
     public GameObject CO2;
-    //public GameObject introd; //化合物簡介
+    public GameObject introd; //化合物簡介
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
@@ -80,7 +80,7 @@ public class CO2Create : MonoBehaviour
     public void button1Click() //分子結構按鈕
     {
         CleanObj();
-        //introd.SetActive(false);
+        introd.SetActive(false);
         GameObject CO20 = Instantiate(CO2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
         CO20.transform.parent = patentsPrefeb.transform;
     }
@@ -88,25 +88,25 @@ public class CO2Create : MonoBehaviour
     public void button2Click() //液體按鈕
     {
         CleanObj();
-        //introd.SetActive(false);
+        introd.SetActive(false);
     }
 
     public void button3Click() //氣體按鈕
     {
         CleanObj();
-        //introd.SetActive(false);
+        introd.SetActive(false);
     }
 
     public void button4Click() //固體按鈕
     {
         CleanObj();
-        //introd.SetActive(false);
+        introd.SetActive(false);
     }
 
     public void button5Click() //簡介按鈕
     {
         CleanObj();
-        //introd.SetActive(true);
+        introd.SetActive(true);
     }
 
     public void CleanObj() //清理生成出來的物件

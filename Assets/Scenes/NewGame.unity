@@ -2376,7 +2376,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86c2dde354f5bd4b8d0e84e93c519f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2520,6 +2520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -2893,6 +2894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
@@ -3512,6 +3514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -3950,6 +3953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -4299,9 +4303,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153322168}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 339.00015}
-  m_LocalScale: {x: 0.42216036, y: 0.42216, z: 0.42216036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1488417024}
   - {fileID: 702324667}
@@ -4314,8 +4318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.00009155273, y: 161.5}
-  m_SizeDelta: {x: 1606.0321, y: 765.11554}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &153322170
 MonoBehaviour:
@@ -4744,6 +4748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 452970198}
@@ -5209,6 +5214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -7133,7 +7139,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ed041162a8744646a0ce7646e06c290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8401,6 +8407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -8984,7 +8991,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86c2dde354f5bd4b8d0e84e93c519f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9603,6 +9610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -9793,6 +9801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -10740,6 +10749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -10964,6 +10974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -11269,6 +11280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -11659,7 +11671,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ed041162a8744646a0ce7646e06c290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11785,7 +11797,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 497032308}
+  - {fileID: 2087472515}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11973,6 +11985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -12681,6 +12694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -12894,6 +12908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -13715,6 +13730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
@@ -14222,6 +14238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -14677,6 +14694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 452970198}
@@ -14971,6 +14989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -15105,6 +15124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -15524,34 +15544,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!21 &497032308
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'puzzle_C_5Material
-
-    106160'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 613f97b06284431d85c84a86e91274b8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!21 &497686915
 Material:
   serializedVersion: 6
@@ -17304,6 +17296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -17675,6 +17668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 1899464968}
   patentsPrefeb: {fileID: 412593344}
   ButtonCanvas: {fileID: 452970198}
@@ -17971,6 +17965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 452970198}
@@ -18918,6 +18913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
@@ -19270,6 +19266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -20792,6 +20789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -22923,6 +22921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -23678,6 +23677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -24062,6 +24062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -24201,7 +24202,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86c2dde354f5bd4b8d0e84e93c519f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24537,7 +24538,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ed041162a8744646a0ce7646e06c290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25504,6 +25505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -26409,6 +26411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -27934,6 +27937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -29256,6 +29260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -31224,6 +31229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -32116,6 +32122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -32175,6 +32182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -33866,7 +33874,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ed041162a8744646a0ce7646e06c290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34152,6 +34160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -35501,6 +35510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -36046,6 +36056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -36526,6 +36537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -36921,6 +36933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -37295,7 +37308,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86c2dde354f5bd4b8d0e84e93c519f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38015,6 +38028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 900827401}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 153322168}
@@ -38738,6 +38752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -40089,6 +40104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
@@ -40238,6 +40254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -41275,6 +41292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -41424,6 +41442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1819028386}
   Instantiate_Pos1: {fileID: 258443063}
   patentsPrefeb: {fileID: 553366489}
   ButtonCanvas: {fileID: 746056031}
@@ -41836,6 +41855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -43794,6 +43814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
@@ -44358,6 +44379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -46279,6 +46301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 268520387}
   Instantiate_Pos1: {fileID: 1649802384}
   patentsPrefeb: {fileID: 1337036083}
   ButtonCanvas: {fileID: 1965976302}
@@ -46844,6 +46867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -47265,6 +47289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 1319661663}
   Instantiate_Pos1: {fileID: 1542353235}
   patentsPrefeb: {fileID: 694395764}
   ButtonCanvas: {fileID: 1421121977}
@@ -47419,7 +47444,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86c2dde354f5bd4b8d0e84e93c519f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -47869,6 +47894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 927617426}
   Instantiate_Pos1: {fileID: 1220695147}
   patentsPrefeb: {fileID: 1818147114}
   ButtonCanvas: {fileID: 604902349}
@@ -49538,6 +49564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 452970198}
@@ -49669,6 +49696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 68383093}
   Instantiate_Pos1: {fileID: 1052362452}
   patentsPrefeb: {fileID: 1244736200}
   ButtonCanvas: {fileID: 1478558181}
@@ -49946,6 +49974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 1455621839}
   Instantiate_Pos1: {fileID: 166405176}
   patentsPrefeb: {fileID: 1314973740}
   ButtonCanvas: {fileID: 452970198}
@@ -50763,6 +50792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 404151062}
   Instantiate_Pos1: {fileID: 194925551}
   patentsPrefeb: {fileID: 1811728541}
   ButtonCanvas: {fileID: 771849021}
@@ -51066,6 +51096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CO2: {fileID: 2557312326693067103, guid: 87041a79d97d7f247be480a39b9e3231, type: 3}
+  introd: {fileID: 326599190}
   Instantiate_Pos1: {fileID: 492781256}
   patentsPrefeb: {fileID: 1044285883}
   ButtonCanvas: {fileID: 1331302540}
@@ -52708,7 +52739,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4bae4dec69f37ff4b8711279b921e773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ed041162a8744646a0ce7646e06c290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -53637,6 +53668,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077229840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &2087472515
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'puzzle_C_5Material
+
+    153664'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 613f97b06284431d85c84a86e91274b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &2090156381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54124,6 +54183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NaCl: {fileID: 8586628286199257945, guid: 59144be1eef4f9b43a8013d266ae9afa, type: 3}
+  introd: {fileID: 2028840868}
   Instantiate_Pos1: {fileID: 367574996}
   patentsPrefeb: {fileID: 1734008658}
   ButtonCanvas: {fileID: 1205935262}
