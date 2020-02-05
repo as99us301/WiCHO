@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\Create.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
+    <Compile Include="Assets\Script\ForCreate\CO2Create.cs" />
     <Compile Include="Assets\Script\ForCreate\H2OCreate.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\CcheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\CheckInView.cs" />
