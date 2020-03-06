@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class labFire : MonoBehaviour
 {
+    public GameObject light;
+    public GameObject fire;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,14 @@ public class labFire : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "O") 
+        {
+            Instantiate(fire, transform.position, transform.rotation);
+        
+        }
     }
 }
