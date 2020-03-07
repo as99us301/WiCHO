@@ -102,7 +102,6 @@
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\ARtest.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
-    <None Include="Assets\Orginal FBX\SimpleGlass.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/R409J/Documents/WiCHO_git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
