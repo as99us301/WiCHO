@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Animation\OpenPanel.cs" />
     <Compile Include="Assets\Orginal FBX\Model\WaterTest\Wobble.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
