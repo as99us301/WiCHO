@@ -78,6 +78,7 @@
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\NacheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\NaCltIPS.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\OcheckinView.cs" />
+    <Compile Include="Assets\Script\lab\PowderInst.cs" />
     <Compile Include="Assets\Script\labFire.cs" />
     <Compile Include="Assets\Script\lookatCamera.cs" />
     <Compile Include="Assets\Script\ScaleAndRotate.cs" />

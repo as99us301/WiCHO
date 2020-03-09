@@ -33,6 +33,14 @@ TagManager:
   - Cl3
   - Cl4
   - Cl5
+  - Fire
+  - BaCl2
+  - CaCO3
+  - CuSO4
+  - H3BO3
+  - KCl
+  - LiCl
+  - NaCl
   layers:
   - Default
   - TransparentFX

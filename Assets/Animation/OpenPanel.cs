@@ -28,13 +28,13 @@ public class OpenPanel : MonoBehaviour
         }
     }
 
-    private void UpMenu() 
+    public void UpMenu() 
     {
         isOpen = true;
         animator.SetBool("Open", isOpen);
     }
 
-    private void DownMenu() 
+    public void DownMenu() 
     {
         isOpen = false;
         animator.SetBool("Open", isOpen);
