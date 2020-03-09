@@ -6,6 +6,8 @@ public class labFire : MonoBehaviour
 {
     public GameObject light;
     public GameObject fire;
+    public GameObject spoon;
+    public GameObject pos;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +28,10 @@ public class labFire : MonoBehaviour
             Instantiate(fire, transform.position, transform.rotation);
         
         }
+    }
+
+    public void test() 
+    {
+        Instantiate(spoon, pos.transform.position, pos.transform.rotation);
     }
 }
