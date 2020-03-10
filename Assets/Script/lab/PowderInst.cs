@@ -6,41 +6,49 @@ public class PowderInst : MonoBehaviour
 {
     public GameObject BaCl2, CaCO3, CuSO4, H3BO3, KCl, LiCl, NaCl;
     public GameObject instpos;
+    public GameObject patentsPrefeb;
 
     public void BaCl2Click() 
     {
         CleanCloneAndDown();
-        Instantiate(BaCl2, instpos.transform.position, instpos.transform.rotation);
+        GameObject BaCl = Instantiate(BaCl2, instpos.transform.position, instpos.transform.rotation);
+        BaCl.transform.parent = patentsPrefeb.transform;
     }
     public void CaCO3Click()
     {
         CleanCloneAndDown();
-        Instantiate(CaCO3, instpos.transform.position, instpos.transform.rotation);
+        GameObject CaCO = Instantiate(CaCO3, instpos.transform.position, instpos.transform.rotation);
+        CaCO.transform.parent = patentsPrefeb.transform;
     }
     public void CuSO4Click()
     {
         CleanCloneAndDown();
-        Instantiate(CuSO4, instpos.transform.position, instpos.transform.rotation);
+        GameObject CuSO = Instantiate(CuSO4, instpos.transform.position, instpos.transform.rotation);
+        CuSO.transform.parent = patentsPrefeb.transform;
     }
     public void H3BO3Click()
     {
         CleanCloneAndDown();
-        Instantiate(H3BO3, instpos.transform.position, instpos.transform.rotation);
+        GameObject h3bo = Instantiate(H3BO3, instpos.transform.position, instpos.transform.rotation);
+        h3bo.transform.parent = patentsPrefeb.transform;
     }
     public void KClClick()
     {
         CleanCloneAndDown();
-        Instantiate(KCl, instpos.transform.position, instpos.transform.rotation);
+        GameObject kcl = Instantiate(KCl, instpos.transform.position, instpos.transform.rotation);
+        kcl.transform.parent = patentsPrefeb.transform;
     }
     public void LiClClick()
     {
         CleanCloneAndDown();
-        Instantiate(LiCl, instpos.transform.position, instpos.transform.rotation);
+        GameObject licl = Instantiate(LiCl, instpos.transform.position, instpos.transform.rotation);
+        licl.transform.parent = patentsPrefeb.transform;
     }
     public void NaClClick()
     {
         CleanCloneAndDown();
-        Instantiate(NaCl, instpos.transform.position, instpos.transform.rotation);
+        GameObject nacl = Instantiate(NaCl, instpos.transform.position, instpos.transform.rotation);
+        nacl.transform.parent = patentsPrefeb.transform;
     }
 
 
