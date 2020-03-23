@@ -80,9 +80,9 @@
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\OcheckinView.cs" />
     <Compile Include="Assets\Script\lab\PowderInst.cs" />
     <Compile Include="Assets\Script\labFire.cs" />
+    <Compile Include="Assets\Script\LoadScene.cs" />
     <Compile Include="Assets\Script\lookatCamera.cs" />
     <Compile Include="Assets\Script\ScaleAndRotate.cs" />
-    <Compile Include="Assets\Script\SceneManager.cs" />
     <Compile Include="Assets\Script\ScrollSnapRect.cs" />
     <Compile Include="Assets\Script\touch.cs" />
     <Compile Include="Assets\Script\TurnTest.cs" />
@@ -94,15 +94,12 @@
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\WiCHO.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\test.xml" />
     <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
-    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
     <None Include="Assets\Course Library\_Source_Files\Materials\UnlitVertexColour_Alpha.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\WiCHO.xml" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\ARtest.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="poster" size="1.000000 1.414358" />
+    <ImageTarget name="LAB" size="1.000000 1.000000" />
+    <ImageTarget name="ELEMENT" size="1.000000 1.001410" />
+    <ImageTarget name="poster" size="1.000000 1.414365" />
+    <ImageTarget name="Puzzle_N_5" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_N_4" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_N_3" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_N_2" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_N_1" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_S_5" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_S_4" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_S_3" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_S_2" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_S_1" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_Mg_5" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Mg_4" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Mg_3" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Mg_2" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Mg_1" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Cu_5" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Cu_4" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Cu_3" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Cu_2" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Cu_1" size="1.000000 0.998592" />
+    <ImageTarget name="Puzzle_Ca_5" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Ca_4" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Ca_3" size="1.000000 1.001410" />
+    <ImageTarget name="Puzzle_Ca_2" size="1.000000 1.000000" />
+    <ImageTarget name="Puzzle_Ca_1" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_Na_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_Na_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_Na_3" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_Na_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_Na_1" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_Cl_5" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_Cl_4" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_Cl_3" size="1.000000 1.001410" />
+    <ImageTarget name="puzzle_Cl_2" size="1.000000 1.001410" />
+    <ImageTarget name="puzzle_Cl_1" size="1.000000 1.001410" />
+    <ImageTarget name="puzzle_O_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_3" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_O_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_O_1" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_3" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_H_1" size="1.000000 1.000000" />
+    <ImageTarget name="puzzle_C_5" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_4" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_3" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_2" size="1.000000 0.998592" />
+    <ImageTarget name="puzzle_C_1" size="1.000000 1.000000" />
   </Tracking>
 </QCARConfig>
