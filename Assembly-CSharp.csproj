@@ -87,6 +87,7 @@
     <Compile Include="Assets\Script\touch.cs" />
     <Compile Include="Assets\Script\TurnTest.cs" />
     <Compile Include="Assets\Script\waterEffectCreate.cs" />
+    <Compile Include="Assets\UI\loading\testtttttt.cs" />
     <Compile Include="Assets\UI\video\videoPlayController.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

@@ -4862,7 +4862,7 @@ GameObject:
   - component: {fileID: 6179225694914852786}
   - component: {fileID: 3184868646601209174}
   m_Layer: 0
-  m_Name: NaCl
+  m_Name: NaCl_Prefeb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4876,7 +4876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8586628286199257945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.268, y: 0.583, z: -2.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 8356981962858357005}
