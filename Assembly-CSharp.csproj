@@ -67,9 +67,14 @@
     <Compile Include="Assets\Orginal FBX\Model\WaterTest\Wobble.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
+    <Compile Include="Assets\Script\ForCreate\CaClCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\CO2Create.cs" />
     <Compile Include="Assets\Script\ForCreate\H2OCreate.cs" />
+    <Compile Include="Assets\Script\ForCreate\HClCreate.cs" />
+    <Compile Include="Assets\Script\ForCreate\Na2OCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\NaClCreate.cs" />
+    <Compile Include="Assets\Script\ForCreate\NaOHCreate.cs" />
+    <Compile Include="Assets\Script\ForCreate\SO2Create.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\CcheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\CheckInView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\ClcheckinView.cs" />

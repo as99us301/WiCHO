@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
 public class NaClCreate : MonoBehaviour
 {
     public GameObject NaCl;
     public GameObject introd; //化合物簡介
+    public GameObject salt;
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
@@ -13,21 +15,28 @@ public class NaClCreate : MonoBehaviour
     public GameObject Nacanvas, Clcanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
+
+    public string puzzleid;
+
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
         ElementArray = GameObject.FindGameObjectsWithTag("Element");
     }
+
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
         if (collision.gameObject.tag == "Na")
         {
-           NaClDone = true;
-            
+            puzzleid = collision.gameObject.name;
+            Debug.Log("HIT" + puzzleid);
+            NaClDone = true;
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
         {
-           NaClDone = true;
+            puzzleid = collision.gameObject.name;
+            NaClDone = true; 
+            Debug.Log("HIT" + puzzleid);
         }
 
         if (NaClDone) {
@@ -95,6 +104,8 @@ public class NaClCreate : MonoBehaviour
     public void button4Click() //固體按鈕
     {
         CleanObj();
+        GameObject saltt = Instantiate(salt, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        saltt.transform.parent = patentsPrefeb.transform;
         introd.SetActive(false);
     }
 
@@ -107,6 +118,7 @@ public class NaClCreate : MonoBehaviour
     public void CleanObj() //清理生成出來的物件
     {
         Destroy(GameObject.Find("NaCl_Prefeb(Clone)"));
+        Destroy(GameObject.Find("salt(Clone)"));
     }
 
     public void CloseCanvas()

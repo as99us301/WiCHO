@@ -22,7 +22,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
     protected TrackableBehaviour.Status m_PreviousStatus;
     protected TrackableBehaviour.Status m_NewStatus;
-    public string test;
+    public string testid;
 
     #endregion // PROTECTED_MEMBER_VARIABLES
 
@@ -62,15 +62,16 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
 
-            test = mTrackableBehaviour.TrackableName;
+            testid = mTrackableBehaviour.TrackableName;
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
-            Debug.Log("This is " + test);
+            Debug.Log("This is " + testid);
             OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NO_POSE)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+            testid = null;
             OnTrackingLost();
         }
         else
