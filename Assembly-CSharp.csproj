@@ -69,7 +69,7 @@
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\ForCreate\CaClCreate.cs" />
-    <Compile Include="Assets\Script\ForCreate\CO2Create.cs" />
+    <Compile Include="Assets\Script\ForCreate\cO2.cs" />
     <Compile Include="Assets\Script\ForCreate\H2OCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\HClCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\Na2OCreate.cs" />

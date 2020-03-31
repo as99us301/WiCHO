@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CO2Create : MonoBehaviour
+public class cO2 : MonoBehaviour
 {
     public GameObject CO2;
     public GameObject introd; //化合物簡介
-    public GameObject COKE;
+    public GameObject COKECOLA;
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
-    public bool ColWith1O;
-    public bool ColWith2O;
+    public bool ColWithO1;
+    public bool ColWithO2;
     public GameObject Ccanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
-    public string puzzlebox = "";
+    public string CO2puzzlebox = "";
+
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
@@ -25,20 +26,18 @@ public class CO2Create : MonoBehaviour
     {
         if (collision.gameObject.tag == "O")
         {
-            if (puzzlebox == "")
+            if (CO2puzzlebox == "")
             {
-                ColWith1O = true;
-                Debug.Log("KO NO DIO DA!");
-                puzzlebox = collision.gameObject.name;
+                ColWithO1 = true;
+                CO2puzzlebox = collision.gameObject.name;
             }
-            else if (puzzlebox != "" && collision.gameObject.name != puzzlebox)
+            else if (CO2puzzlebox != "" && collision.gameObject.name != CO2puzzlebox)
             {
-                ColWith2O = true;
-                Debug.Log("WRRRRRRRRRRRRRRRRRRRRRRY");
+                ColWithO2 = true;
             }
         }
 
-        if (ColWith1O && ColWith2O)
+        if (ColWithO1 && ColWithO2)
         {
             CloseCanvas();
             for (int i = 0; i < ElementArray.Length; i++)
@@ -53,7 +52,7 @@ public class CO2Create : MonoBehaviour
 
     void OnCollisionStay(Collision collision) //碰撞進行中
     {
-        if (ColWith1O && ColWith2O)
+        if (ColWithO1 && ColWithO2)
         {
             ButtonCanvas.SetActive(true);
         }
@@ -63,25 +62,15 @@ public class CO2Create : MonoBehaviour
     {
         if (collision.gameObject.tag == "O")
         {
-            ColWith1O = false;
-            ColWith2O = false;
+            ColWithO1 = false;
+            ColWithO2 = false;
             ButtonCanvas.SetActive(false);
             CleanObj();
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(true);
             }
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("OLayer"))
-        {
-            ColWith1O = false;
-            ColWith2O = false;
-            ButtonCanvas.SetActive(false);
-            CleanObj();
-            for (int i = 0; i < ElementArray.Length; i++)
-            {
-                ElementArray[i].gameObject.SetActive(true);
-            }
+            CO2puzzlebox = "";
         }
     }
 
@@ -89,28 +78,16 @@ public class CO2Create : MonoBehaviour
     {
         CleanObj();
         introd.SetActive(false);
-        GameObject CO20 = Instantiate(CO2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-        CO20.transform.parent = patentsPrefeb.transform;
-    }
-
-    public void button2Click() //液體按鈕
-    {
-        CleanObj();
-        introd.SetActive(false);
+        GameObject CO202 = Instantiate(CO2, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        CO202.transform.parent = patentsPrefeb.transform;
     }
 
     public void COKEClick() //氣體按鈕
     {
         CleanObj();
-        GameObject COKEcola1 = Instantiate(COKE, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-        COKEcola1.transform.parent = patentsPrefeb.transform;
         introd.SetActive(false);
-    }
-
-    public void button4Click() //固體按鈕
-    {
-        CleanObj();
-        introd.SetActive(false);
+        GameObject COKE = Instantiate(COKECOLA, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        COKE.transform.parent = patentsPrefeb.transform;
     }
 
     public void button5Click() //簡介按鈕
@@ -121,8 +98,8 @@ public class CO2Create : MonoBehaviour
 
     public void CleanObj() //清理生成出來的物件
     {
+        Destroy(GameObject.Find("GameObject(Clone)"));
         Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
-        Destroy(GameObject.Find("COKE(Clone)"));
     }
 
     public void CloseCanvas()
@@ -130,4 +107,5 @@ public class CO2Create : MonoBehaviour
         Ccanvas.SetActive(false);
         Ocanvas.SetActive(false);
     }
+
 }
