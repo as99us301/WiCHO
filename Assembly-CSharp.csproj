@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Animation\OpenPanel.cs" />
     <Compile Include="Assets\Orginal FBX\Model\WaterTest\Wobble.cs" />
+    <Compile Include="Assets\Scenes\TESTTTT.cs" />
     <Compile Include="Assets\Script\ElementButton.cs" />
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\ForCreate\CaClCreate.cs" />

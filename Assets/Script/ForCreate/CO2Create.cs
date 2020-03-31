@@ -15,6 +15,7 @@ public class CO2Create : MonoBehaviour
     public GameObject Ccanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
+    public string puzzlebox = "";
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
@@ -24,11 +25,17 @@ public class CO2Create : MonoBehaviour
     {
         if (collision.gameObject.tag == "O")
         {
-            ColWith1O = true;
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("OLayer"))
-        {
-            ColWith2O = true;
+            if (puzzlebox == "")
+            {
+                ColWith1O = true;
+                Debug.Log("KO NO DIO DA!");
+                puzzlebox = collision.gameObject.name;
+            }
+            else if (puzzlebox != "" && collision.gameObject.name != puzzlebox)
+            {
+                ColWith2O = true;
+                Debug.Log("WRRRRRRRRRRRRRRRRRRRRRRY");
+            }
         }
 
         if (ColWith1O && ColWith2O)

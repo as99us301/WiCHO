@@ -29,14 +29,14 @@ public class NaClCreate : MonoBehaviour
         if (collision.gameObject.tag == "Na")
         {
             puzzleid = collision.gameObject.name;
-            Debug.Log("HIT" + puzzleid);
+            Debug.Log("HIT : " + puzzleid);
             NaClDone = true;
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
         {
             puzzleid = collision.gameObject.name;
             NaClDone = true; 
-            Debug.Log("HIT" + puzzleid);
+            Debug.Log("HIT : " + puzzleid);
         }
 
         if (NaClDone) {

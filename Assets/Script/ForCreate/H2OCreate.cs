@@ -16,6 +16,8 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Hcanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
+    public string puzzlebox = "";
+
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
@@ -25,10 +27,17 @@ public class H2OCreate : MonoBehaviour {
     {
         if (collision.gameObject.tag == "H")
         {
-            ColWith1H = true;
-        } else if (collision.gameObject.layer == LayerMask.NameToLayer("HLayer"))
-        {
-            ColWith2H = true;
+            if (puzzlebox == "")
+            {
+                ColWith1H = true;
+                Debug.Log("KO NO DIO DA!");
+                puzzlebox = collision.gameObject.name;
+            }
+            else if(puzzlebox != "" && collision.gameObject.name != puzzlebox) 
+            {
+                ColWith2H = true;
+                Debug.Log("WRRRRRRRRRRRRRRRRRRRRRRY");
+            }
         }
 
         if (ColWith1H && ColWith2H)
@@ -64,17 +73,7 @@ public class H2OCreate : MonoBehaviour {
             {
                 ElementArray[i].gameObject.SetActive(true);
             }
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("HLayer"))
-        {
-            ColWith1H = false;
-            ColWith2H = false;
-            ButtonCanvas.SetActive(false);
-            CleanObj();
-            for (int i = 0; i < ElementArray.Length; i++)
-            {
-                ElementArray[i].gameObject.SetActive(true);
-            }
+            puzzlebox = "";
         }
     }
 
@@ -131,4 +130,5 @@ public class H2OCreate : MonoBehaviour {
         Hcanvas.SetActive(false);
         Ocanvas.SetActive(false);
     }
+
 }

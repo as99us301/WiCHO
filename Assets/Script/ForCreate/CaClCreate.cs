@@ -14,7 +14,6 @@ public class CaClCreate : MonoBehaviour
     public GameObject Cacanvas, Clcanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
-
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
