@@ -70,6 +70,9 @@
     <Compile Include="Assets\Script\Floating.cs" />
     <Compile Include="Assets\Script\ForCreate\CaClCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\cO2.cs" />
+    <Compile Include="Assets\Script\ForCreate\h2o2p1.cs" />
+    <Compile Include="Assets\Script\ForCreate\h2o2p2.cs" />
+    <Compile Include="Assets\Script\ForCreate\H2O2P3.cs" />
     <Compile Include="Assets\Script\ForCreate\H2OCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\HClCreate.cs" />
     <Compile Include="Assets\Script\ForCreate\Na2OCreate.cs" />
@@ -93,7 +96,6 @@
     <Compile Include="Assets\Script\touch.cs" />
     <Compile Include="Assets\Script\TurnTest.cs" />
     <Compile Include="Assets\Script\waterEffectCreate.cs" />
-    <Compile Include="Assets\UI\loading\testtttttt.cs" />
     <Compile Include="Assets\UI\video\videoPlayController.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

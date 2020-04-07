@@ -1,20 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ElementButton : MonoBehaviour
 {
     public GameObject pos;
-    public GameObject H, He;
-    public GameObject Li, Be, B, C, N, O, F, Ne;
-    public GameObject Na, Mg, Al, Si, P, S, Cl, Ar;
-    public GameObject K, Ca, Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn, Ga, Ge, As, Se, Br, Kr;
-    public GameObject Rb, Sr, Y, Zr, Nb, Mo, Tc, Ru, Rh, Pd, Ag, Cd, In, Sn, Sb, Te, I, Xe;
-    public GameObject Cs, Ba, Lu, Hf, Ta, W, Re, Os, Ir, Pt, Au, Hg, Tl, Pb, Bi, Po, At, Rn;
-    public GameObject Fr, Ra, Lr, Rf, Db, Sg, Bh, Hs, Mt;
     public GameObject patentsPrefeb;
-
-    public void cleanObj() 
+    public Text ElementnameEng; //英文
+    public Text ElementnameZh; //中文
+    public Text AtomicNumber; //原子序
+    public Text AtomicMass; //原子量
+    public string[,] Ballarray = new string[,] {{"1","H","氫","1"},{"2","He","氦","4"},
+        {"3","Li","鋰","7"},{"4","Be","鈹","9"},{"5","B","硼","11"},{"6","C","碳","12"},
+        {"7","N","氮","14"},{"8","O","氧","16"},{"9","F","氟","19"},{"10","Ne","氖","20"},
+        {"11","Na","鈉","23"},{"12","Mg","鎂","24"},{"13","Al","鋁","27"},{"14","Si","矽","26"},
+        {"15","P","磷","31"},{"16","S","硫","32"},{"17","Cl","氯","35"},{"18","Ar","氬","40"},
+        {"19","K","鉀","39"},{"20","Ca","鈣","40"},{"21","Sc","鈧","45"},{"22","Ti","鈦","48"},
+        {"23","V","釩","51"},{"24","Cr","鉻","52"},{"25","Mn","錳","55"},{"26","Fe","鐵","56"},
+        {"27","Co","鈷","59"},{"28","Ni","鎳","58"},{"29","Cu","銅","63"},{"30","Zn","鋅","64"},
+        {"31","Ga","鎵","69"},{"32","Ge","鍺","74"},{"33","As","砷","75"},{"34","Se","硒","80"},
+        {"35","Br","溴","79"},{"36","Kr","氪","84"},{"37","Rb","銣","85"},{"38","Sr","鍶","88"},
+        {"39","Y","釔","89"},{"40","Zr","鋯","90"},{"41","Nb","鈮","93"},{"42","Mo","鉬","98"},
+        {"43","Tc","鎝","99"},{"44","Ru","釕","102"},{"45","Rh","銠","103"},{"46","Pd","鈀","106"},
+        {"47","Ag","銀","107"},{"48","Cd","鎘","114"},{"49","In","銦","115"},{"50","Sn","錫","118"},
+        {"51","Sb","銻","121"},{"52","Te","碲","130"},{"53","I","碘","127"},{"54","Xe","氙","132"},
+        {"55","Cs","銫","133"},{"56","Ba","鋇","138"},{"71","Lu","鎦","175"},{"72","Hf","鉿","178"},
+        {"73","Ta","鉭","181"},{"74","W","鎢","184"},{"75","Re","錸","187"},{"76","Os","鋨","192"},
+        {"77","Ir","銥","193"},{"78","Pt","鉑","195"},{"79","Au","金","197"},{"80","Hg","汞","202"},
+        {"81","Tl","鉈","205"},{"82","Pb","鉛","208"},{"83","Bi","鉍","209"},{"84","Po","釙","210"},
+        {"85","At","砈","210"},{"86","Rn","氡","222"},{"87","Fr","鍅","223"},{"88","Ra","鐳","226"},
+        {"103","Lr","鐒","262"},{"104","Rf","鑪","261"},{"105","Db","𨧀","262"},{"106","Sg","𨭎","266"},
+        {"107","Bh","𨨏","264"},{"108","Hs","𨭆","277"},{"109","Mt","䥑","268"}};
+    public GameObject[] ElementBalls;
+    public void cleanObj()
     {
         Destroy(GameObject.Find("H_new(Clone)"));
         Destroy(GameObject.Find("He_new(Clone)"));
@@ -99,490 +118,339 @@ public class ElementButton : MonoBehaviour
         Destroy(GameObject.Find("Sr_new(Clone)"));
 
     }
-    public void HClick()
+
+    public void newball(int number)
     {
         cleanObj();
-        GameObject obj = Instantiate(H, pos.transform.position, pos.transform.rotation);
+        GameObject obj = Instantiate(ElementBalls[number], pos.transform.position, pos.transform.rotation);
         obj.transform.parent = patentsPrefeb.transform;
+        AtomicNumber.text = Ballarray[number, 0];
+        ElementnameEng.text = Ballarray[number, 1];
+        ElementnameZh.text = Ballarray[number, 2];
+        AtomicMass.text = Ballarray[number, 3];
+    }
+    public void HClick()
+    {
+        newball(0);
     }
     public void HeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(He, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(1);
     }
     public void LiClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Li, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(2);
     }
     public void BeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Be, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(3);
     }
     public void BClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(B, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(4);
     }
     public void CClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(C, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(5);
     }
     public void NClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(N, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(6);
     }
     public void OClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(O, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(7);
     }
     public void FClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(F, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(8);
     }
     public void NeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ne, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(9);
     }
     public void NaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Na, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(10);
     }
     public void MgClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Mg, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(11);
     }
     public void AlClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Al, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(12);
     }
     public void SiClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Si, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(13);
     }
     public void PClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(P, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(14);
     }
     public void SClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(S, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(15);
     }
     public void ClClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Cl, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(16);
     }
     public void ArClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ar, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(17);
     }
     public void KClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(K, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(18);
     }
     public void CaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ca, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(19);
     }
     public void ScClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Sc, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(20);
     }
     public void TiClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ti, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(21);
     }
     public void VClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(V, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(22);
     }
     public void CrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Cr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(23);
     }
     public void MnClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Mn, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(24);
     }
     public void FeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Fe, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(25);
     }
     public void CoClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Co, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(26);
     }
     public void NiClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ni, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(27);
     }
     public void CuClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Cu, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(28);
     }
     public void ZnClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Zn, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(29);
     }
     public void GaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ga, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(30);
     }
     public void GeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ge, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(31);
     }
     public void AsClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(As, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(32);
     }
     public void SeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Se, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(33);
     }
     public void BrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Br, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(34);
     }
     public void KrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Kr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(35);
     }
     public void RbClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Rb, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(36);
     }
     public void SrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Sr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(37);
     }
     public void YClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Y, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(38);
     }
     public void ZrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Zr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(39);
     }
     public void NbClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Nb, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(40);
     }
     public void MoClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Mo, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(41);
     }
     public void TcClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Tc, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(42);
     }
     public void RuClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ru, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(43);
     }
     public void RhClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Rh, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(44);
     }
     public void PdClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Pd, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(45);
     }
     public void AgClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ag, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(46);
     }
     public void CdClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Cd, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(47);
     }
     public void InClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(In, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(48);
     }
     public void SnClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Sn, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(49);
     }
     public void SbClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Sb, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(50);
     }
     public void TeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Te, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(51);
     }
     public void IClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(I, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(52);
     }
     public void XeClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Xe, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(53);
     }
     public void CsClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Cs, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(54);
     }
     public void BaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ba, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(55);
     }
     public void LuClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Lu, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(56);
     }
     public void HfClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Hf, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(57);
     }
     public void TaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ta, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(58);
     }
     public void WClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(W, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(59);
     }
     public void ReClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Re, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(60);
     }
     public void OsClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Os, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(61);
     }
     public void IrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ir, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(62);
     }
     public void PtClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Pt, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(63);
     }
     public void AuClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Au, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(64);
     }
     public void HgClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Hg, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(65);
     }
     public void TlClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Tl, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(66);
     }
     public void PbClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Pb, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(67);
     }
     public void BiClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Bi, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(68);
     }
     public void PoClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Po, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(69);
     }
     public void AtClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(At, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(70);
     }
     public void RnClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Rn, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(71);
     }
     public void FrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Fr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(72);
     }
     public void RaClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Ra, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(73);
     }
     public void LrClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Lr, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(74);
     }
     public void RfClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Rf, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(75);
     }
     public void DbClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Db, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(76);
     }
     public void SgClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Sg, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(77);
     }
     public void BhClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Bh, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(78);
     }
     public void HsClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Hs, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(79);
     }
     public void MtClick()
     {
-        cleanObj();
-        GameObject obj = Instantiate(Mt, pos.transform.position, pos.transform.rotation);
-        obj.transform.parent = patentsPrefeb.transform;
+        newball(80);
     }
 }
