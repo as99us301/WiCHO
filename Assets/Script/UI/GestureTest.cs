@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TESTTTT : MonoBehaviour
+public class GestureTest : MonoBehaviour
 {
     public GameObject tutor;
     private Animator animator;
@@ -18,10 +18,8 @@ public class TESTTTT : MonoBehaviour
     {
         if (tutor != null)
         {
-
             if (animator != null)
             {
-
                 if (!isComeOut)
                 {
                     UpMenu();
