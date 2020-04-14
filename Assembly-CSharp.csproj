@@ -96,6 +96,8 @@
     <Compile Include="Assets\Script\UI\GestureTest.cs" />
     <Compile Include="Assets\Script\UI\OpenPanel.cs" />
     <Compile Include="Assets\Script\waterEffectCreate.cs" />
+    <Compile Include="Assets\UI\Button\clickedtest.cs" />
+    <Compile Include="Assets\UI\Button\NumberBridge.cs" />
     <Compile Include="Assets\UI\video\videoPlayController.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

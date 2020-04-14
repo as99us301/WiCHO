@@ -33,6 +33,12 @@ public class ElementButton : MonoBehaviour
         {"103","Lr","鐒","262"},{"104","Rf","鑪","261"},{"105","Db","𨧀","262"},{"106","Sg","𨭎","266"},
         {"107","Bh","𨨏","264"},{"108","Hs","𨭆","277"},{"109","Mt","䥑","268"}};
     public GameObject[] ElementBalls;
+    public GameObject eleImage;
+    public GameObject[] introdImage;
+    public int Typetextsize = 90;
+    public int Numtextsize = 80;
+    public GameObject testmanager;
+
     public void cleanObj()
     {
         Destroy(GameObject.Find("H_new(Clone)"));
@@ -119,16 +125,43 @@ public class ElementButton : MonoBehaviour
 
     }
 
+    public void closeimage() 
+    {
+        for (int i = 0; i <= introdImage.Length - 1; i++) 
+        {
+            introdImage[i].SetActive(false);
+        }
+    }
+
     public void newball(int number)
     {
         cleanObj();
+        closeimage();
+        eleImage.SetActive(true);
         GameObject obj = Instantiate(ElementBalls[number], pos.transform.position, pos.transform.rotation);
         obj.transform.parent = patentsPrefeb.transform;
+        ChangeTextSize();
         AtomicNumber.text = Ballarray[number, 0];
         ElementnameEng.text = Ballarray[number, 1];
         ElementnameZh.text = Ballarray[number, 2];
         AtomicMass.text = Ballarray[number, 3];
+        testmanager.GetComponent<NumberBridge>().testnum = number;
     }
+
+    public void ChangeTextSize() 
+    {
+        ElementnameEng.fontSize = Typetextsize;
+        ElementnameZh.fontSize = Typetextsize;
+        AtomicMass.fontSize = Numtextsize;
+        AtomicNumber.fontSize = Numtextsize;
+    }
+
+
+    public void thing1Click() {
+        closeimage();
+        eleImage.SetActive(true);
+    }
+
     public void HClick()
     {
         newball(0);
