@@ -15,6 +15,7 @@ public class SO2Create : MonoBehaviour
     public GameObject Scanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
+    public string SO2puzzlebox = "";
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
@@ -24,11 +25,17 @@ public class SO2Create : MonoBehaviour
     {
         if (collision.gameObject.tag == "O")
         {
-            ColWithO1 = true;
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("OLayer"))
-        {
-            ColWithO2 = true;
+            if (SO2puzzlebox == "")
+            {
+                ColWithO1 = true;
+                SO2puzzlebox = collision.gameObject.name;
+                Debug.Log("Wryyyyyyyyyyyyy");
+            }
+            else if (SO2puzzlebox != "" && collision.gameObject.name != SO2puzzlebox)
+            {
+                ColWithO2 = true;
+                Debug.Log("Ora");
+            }
         }
 
         if (ColWithO1 && ColWithO2)
@@ -64,17 +71,7 @@ public class SO2Create : MonoBehaviour
             {
                 ElementArray[i].gameObject.SetActive(true);
             }
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("OLayer"))
-        {
-            ColWithO1 = false;
-            ColWithO2 = false;
-            ButtonCanvas.SetActive(false);
-            CleanObj();
-            for (int i = 0; i < ElementArray.Length; i++)
-            {
-                ElementArray[i].gameObject.SetActive(true);
-            }
+            SO2puzzlebox = "";
         }
     }
 

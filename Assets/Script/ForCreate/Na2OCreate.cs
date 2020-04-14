@@ -14,6 +14,7 @@ public class Na2OCreate : MonoBehaviour
     public GameObject Nacanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
+    public string na2opuzzlebox = "";
     void Start()
     {
         checkImage = GameObject.Find("checkImage");
@@ -21,13 +22,17 @@ public class Na2OCreate : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision) //當碰撞開始後
     {
-        if (collision.gameObject.tag == "Na1")
+        if (collision.gameObject.tag == "Na")
         {
-            ColWith1NA = true;
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
-        {
-            ColWith2NA = true;
+            if (na2opuzzlebox == "")
+            {
+                ColWith1NA = true;
+                na2opuzzlebox = collision.gameObject.name;
+            }
+            else if (na2opuzzlebox != "" && collision.gameObject.name != na2opuzzlebox)
+            {
+                ColWith2NA = true;
+            }
         }
 
         if (ColWith1NA && ColWith2NA)
@@ -53,7 +58,7 @@ public class Na2OCreate : MonoBehaviour
 
     void OnCollisionExit(Collision collision) //當碰撞結束後
     {
-        if (collision.gameObject.tag == "Na1")
+        if (collision.gameObject.tag == "Na")
         {
             ColWith1NA = false;
             ColWith2NA = false;
@@ -63,17 +68,7 @@ public class Na2OCreate : MonoBehaviour
             {
                 ElementArray[i].gameObject.SetActive(true);
             }
-        }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("NaLayer"))
-        {
-            ColWith1NA = false;
-            ColWith2NA = false;
-            ButtonCanvas.SetActive(false);
-            CleanObj();
-            for (int i = 0; i < ElementArray.Length; i++)
-            {
-                ElementArray[i].gameObject.SetActive(true);
-            }
+            na2opuzzlebox = "";
         }
     }
 
