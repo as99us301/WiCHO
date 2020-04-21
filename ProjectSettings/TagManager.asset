@@ -37,6 +37,7 @@ TagManager:
   - LiCl
   - NaCl
   - Na
+  - NewBox
   layers:
   - Default
   - TransparentFX

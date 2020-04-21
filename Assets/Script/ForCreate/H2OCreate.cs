@@ -17,6 +17,7 @@ public class H2OCreate : MonoBehaviour {
     public GameObject[] ElementArray;
     private GameObject checkImage;
     public string puzzlebox = "";
+    public bool H2OComplete = false;
 
     void Start()
     {
@@ -30,18 +31,17 @@ public class H2OCreate : MonoBehaviour {
             if (puzzlebox == "")
             {
                 ColWith1H = true;
-                Debug.Log("KO NO DIO DA!");
                 puzzlebox = collision.gameObject.name;
             }
             else if(puzzlebox != "" && collision.gameObject.name != puzzlebox) 
             {
                 ColWith2H = true;
-                Debug.Log("WRRRRRRRRRRRRRRRRRRRRRRY");
             }
         }
 
         if (ColWith1H && ColWith2H)
         {
+            H2OComplete = true;
             CloseCanvas();
             for (int i = 0; i < ElementArray.Length; i++)
             {
@@ -55,7 +55,7 @@ public class H2OCreate : MonoBehaviour {
 
     void OnCollisionStay(Collision collision) //碰撞進行中
     {
-        if (ColWith1H && ColWith2H)
+        if (H2OComplete)
         {
             ButtonCanvas.SetActive(true);
         }
@@ -65,6 +65,7 @@ public class H2OCreate : MonoBehaviour {
     {
         if (collision.gameObject.tag == "H")
         {
+            H2OComplete = false;
             ColWith1H = false;
             ColWith2H = false;
             ButtonCanvas.SetActive(false);
@@ -130,5 +131,4 @@ public class H2OCreate : MonoBehaviour {
         Hcanvas.SetActive(false);
         Ocanvas.SetActive(false);
     }
-
 }
