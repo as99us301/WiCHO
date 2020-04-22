@@ -83,11 +83,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     #region PROTECTED_METHODS
     //public UnityEngine.Video.VideoPlayer videoPlayer;
     public GameObject videoPlayer;
+    public GameObject dino;
 
     protected virtual void OnTrackingFound()
     {
         //videoPlayer.Play();
         if (videoPlayer != null) videoPlayer.SetActive(true);
+        if (dino != null) dino.SetActive(true);
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -111,6 +113,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         //videoPlayer.Stop();
         if (videoPlayer != null) videoPlayer.SetActive(false);
+        if (dino != null) dino.SetActive(false);
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
