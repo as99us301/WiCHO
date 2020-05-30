@@ -10,12 +10,12 @@ public class cO2 : MonoBehaviour
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
-    public bool ColWithO1;
-    public bool ColWithO2;
+    private bool ColWithO1;
+    private bool ColWithO2;
     public GameObject Ccanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
-    public string CO2puzzlebox = "";
+    private string CO2puzzlebox = "";
 
     void Start()
     {
@@ -99,7 +99,7 @@ public class cO2 : MonoBehaviour
     public void CleanObj() //清理生成出來的物件
     {
         Destroy(GameObject.Find("GameObject(Clone)"));
-        Destroy(GameObject.Find("CO2_Prefeb(Clone)"));
+        Destroy(GameObject.Find("CO2(Clone)"));
     }
 
     public void CloseCanvas()

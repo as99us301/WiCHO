@@ -16,7 +16,7 @@ public class OpenPanel : MonoBehaviour
         animator = Menupanel.GetComponent<Animator>();
         isOpen = animator.GetBool("Open");
         Swipeanimator = SwipePanel.GetComponent<Animator>();
-        isSwipeOn = animator.GetBool("SwipeOn");
+        isSwipeOn = animator.GetBool("LabSwipeOn");
         SwipeON();
     }
 
@@ -54,11 +54,11 @@ public class OpenPanel : MonoBehaviour
     
     public void SwipeON() {
         isSwipeOn = true;
-        Swipeanimator.SetBool("SwipeOn", isSwipeOn);
+        Swipeanimator.SetBool("LabSwipeOn", isSwipeOn);
     }
     public void SwipeDown()
     {
         isSwipeOn = false;
-        Swipeanimator.SetBool("SwipeOn", isSwipeOn);
+        Swipeanimator.SetBool("LabSwipeOn", isSwipeOn);
     }
 }

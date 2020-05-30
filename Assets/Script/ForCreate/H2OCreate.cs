@@ -11,12 +11,12 @@ public class H2OCreate : MonoBehaviour {
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
-    public bool ColWith1H;
-    public bool ColWith2H;
+    private bool ColWith1H;
+    private bool ColWith2H;
     public GameObject Hcanvas, Ocanvas;
     public GameObject[] ElementArray;
     private GameObject checkImage;
-    public string puzzlebox = "";
+    private string puzzlebox = "";
     public bool H2OComplete = false;
 
     void Start()
@@ -41,15 +41,20 @@ public class H2OCreate : MonoBehaviour {
 
         if (ColWith1H && ColWith2H)
         {
-            H2OComplete = true;
+            if (H2OComplete != true)
+            {
+                GameObject H2O1 = Instantiate(H2O, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+                H2O1.transform.parent = patentsPrefeb.transform;
+                H2OComplete = true;
+            }
+            //H2OComplete = true;
             CloseCanvas();
             for (int i = 0; i < ElementArray.Length; i++)
             {
                 ElementArray[i].gameObject.SetActive(false);
             }
             checkImage.SetActive(false);
-            GameObject H2O1 = Instantiate(H2O, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-            H2O1.transform.parent = patentsPrefeb.transform;
+           
         }
     }
 

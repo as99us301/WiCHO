@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckInView : MonoBehaviour
 {
     public bool ifInScene = true;
-    public GameObject checkImage;
+    private GameObject checkImage;
 
     void Start()
     {

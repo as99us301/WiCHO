@@ -9,6 +9,7 @@ public class NaOHCreate : MonoBehaviour
     public GameObject Instantiate_Pos1;
     public GameObject patentsPrefeb;
     public GameObject ButtonCanvas;
+    public GameObject soap;
     public bool NaOHDone;
     public bool ColWithH = false;
     public bool ColWithNa = false;
@@ -96,23 +97,12 @@ public class NaOHCreate : MonoBehaviour
         naoh0.transform.parent = patentsPrefeb.transform;
     }
 
-    public void button2Click() //液體按鈕
-    {
-        CleanObj();
-        introd.SetActive(false);
-    }
-
-    public void button3Click() //氣體按鈕
-    {
-        CleanObj();
-        introd.SetActive(false);
-    }
 
     public void button4Click() //固體按鈕
     {
         CleanObj();
-        //GameObject ATHING1 = Instantiate(thing, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
-        //ATHING1.transform.parent = patentsPrefeb.transform;
+        GameObject ATHING1 = Instantiate(soap, Instantiate_Pos1.transform.position, Instantiate_Pos1.transform.rotation);
+        ATHING1.transform.parent = patentsPrefeb.transform;
         introd.SetActive(false);
     }
 
@@ -125,6 +115,7 @@ public class NaOHCreate : MonoBehaviour
     public void CleanObj() //清理生成出來的物件
     {
         Destroy(GameObject.Find("NaOH_Prefeb(Clone)"));
+        Destroy(GameObject.Find("soap(Clone)"));
     }
 
     public void CloseCanvas()

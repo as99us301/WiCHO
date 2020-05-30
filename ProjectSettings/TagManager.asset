@@ -7,27 +7,10 @@ TagManager:
   - tips
   - O
   - H
-  - H5
-  - H10
-  - H4
-  - H9
-  - H2
-  - H8
-  - H6
-  - H7
-  - H3
   - C
   - kettle
   - Element
-  - O2
   - O3
-  - C2
-  - C3
-  - Cl1
-  - Cl2
-  - Cl3
-  - Cl4
-  - Cl5
   - Fire
   - BaCl2
   - CaCO3
@@ -38,6 +21,9 @@ TagManager:
   - NaCl
   - Na
   - NewBox
+  - Ca
+  - Cl
+  - S
   layers:
   - Default
   - TransparentFX
@@ -55,7 +41,7 @@ TagManager:
   - NaLayer
   - ClLayer
   - SLayer
-  - 
+  - CaLayer
   - 
   - 
   - 

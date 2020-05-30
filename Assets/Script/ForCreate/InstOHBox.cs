@@ -9,13 +9,13 @@ public class InstOHBox : MonoBehaviour
     {
         if (collision.gameObject.tag == "O")      
         {
-            if (collision.gameObject.GetComponent<H2OCreate>().H2OComplete != true) 
+            if (collision.gameObject.GetComponent<H2OCreate>().H2OComplete == true) 
             {
-                newBox.SetActive(true);
+                newBox.SetActive(false);
             }
             else 
             {
-                newBox.SetActive(false);
+                newBox.SetActive(true);
             }
         }
     }

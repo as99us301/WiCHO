@@ -37,7 +37,8 @@ public class ElementButton : MonoBehaviour
     public GameObject[] introdImage;
     public int Typetextsize = 90;
     public int Numtextsize = 80;
-    public GameObject testmanager;
+    public GameObject testmanager; //詳細資料顯示的panel
+    public GameObject quest; //問號球球
 
     public void cleanObj()
     {
@@ -138,6 +139,7 @@ public class ElementButton : MonoBehaviour
         cleanObj();
         closeimage();
         eleImage.SetActive(true);
+        quest.SetActive(false);
         GameObject obj = Instantiate(ElementBalls[number], pos.transform.position, pos.transform.rotation);
         obj.transform.parent = patentsPrefeb.transform;
         ChangeTextSize();
