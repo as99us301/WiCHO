@@ -12,17 +12,17 @@ public class CheckInView : MonoBehaviour
         checkImage = GameObject.Find("checkImage");
     }
 
-   void OnBecameVisible()
-   {
-       ifInScene = true;
-       Debug.Log("Show");
-       checkImage.SetActive(false);
-   }
-   void OnBecameInvisible()
-   {
-       ifInScene = false;
-       Debug.Log("Lost");
-       checkImage.SetActive(true);
-   }
+    void OnBecameVisible()
+    {
+        ifInScene = true;
+        Debug.Log("Show");
+        checkImage.SetActive(false);
+    }
+    void OnBecameInvisible()
+    {
+        ifInScene = false;
+        Debug.Log("Lost");
+        checkImage.SetActive(true);
+    }
 
 }

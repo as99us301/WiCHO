@@ -85,10 +85,12 @@
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\ClcheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\h2ocheck.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\HcheckinView.cs" />
+    <Compile Include="Assets\Script\ForTips&amp;CheckInView\Mg_Check.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\MutiElementShowTips.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\NacheckinView.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\NaCltIPS.cs" />
     <Compile Include="Assets\Script\ForTips&amp;CheckInView\OcheckinView.cs" />
+    <Compile Include="Assets\Script\ForTips&amp;CheckInView\S_check.cs" />
     <Compile Include="Assets\Script\lab\PowderInst.cs" />
     <Compile Include="Assets\Script\labFire.cs" />
     <Compile Include="Assets\Script\LoadScene.cs" />
