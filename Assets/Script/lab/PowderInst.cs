@@ -53,7 +53,7 @@ public class PowderInst : MonoBehaviour
 
 
     private void CleanCloneAndDown() {
-        GameObject.Find("UpButton").GetComponent<OpenPanel>().DownMenu();
+        GameObject.Find("UpButton").GetComponent<LabOpenPanel>().DownMenu();
         Destroy(GameObject.Find("spoon+BaCl2(Clone)"));
         Destroy(GameObject.Find("spoon+CaCO3(Clone)"));
         Destroy(GameObject.Find("spoon+CuSO4(Clone)"));
